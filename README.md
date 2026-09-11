@@ -204,7 +204,7 @@ Sigue estos sencillos pasos para publicar el portafolio en la web:
 
 2. **Vincular el repositorio remoto y subir los commits**:
    ```bash
-   git remote add origin https://github.com/FranciscoArias10/portafolio-francisco-arias.git
+   git remote add origin https://github.com/FranciscoArias10/S2-Tarea-1-Desarollo-web.git
    git branch -M main
    git push -u origin main
    ```
@@ -219,7 +219,7 @@ Sigue estos sencillos pasos para publicar el portafolio en la web:
 
 4. **Verificar la URL pública**:
    - En un par de minutos, GitHub Pages generará tu enlace público:
-     `https://franciscoarias10.github.io/portafolio-francisco-arias/`
+     `https://franciscoarias10.github.io/S2-Tarea-1-Desarollo-web/`
    - Ábrelo en una ventana en modo incógnito para verificar la carga fluida de hojas de estilo, scripts e imágenes.
 
 ---

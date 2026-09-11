@@ -57,11 +57,11 @@ S2-Tarea#1-Desarollo-web/
 │   └── main.js                  # Punto de entrada principal y orquestador
 └── assets/
     └── img/                     # Imágenes optimizadas de proyectos y fotografía de perfil
-        ├── profile.jpg          # Foto profesional de Francisco Arias
-        ├── project-edutrack.jpg # Captura del proyecto EduTrack UNEMI
-        ├── project-ecomarket.jpg# Captura del proyecto EcoMarket Store
-        ├── project-devpulse.jpg # Captura del proyecto DevPulse Metrics
-        └── project-taskflow.jpg # Captura del proyecto TaskFlow Pro
+        ├── profile.jpg          # Foto profesional oficial de Francisco Arias
+        ├── project-librepdf.jpg # Captura del proyecto LibrePDF (React Native/Expo)
+        ├── project-librefree.jpg# Captura del proyecto LibreFree (Lector & Audiolibros)
+        ├── project-sesplatform.jpg # Captura del portal SES-Platform (Vercel)
+        └── project-acuaia.jpg   # Captura de la plataforma de IA acuaIA (Vercel)
 ```
 
 ---
@@ -86,12 +86,12 @@ S2-Tarea#1-Desarollo-web/
    - Cada habilidad incluye ícono vectorial, porcentaje verificable, descripción técnica y barra de progreso con atributos ARIA accesibles.
 
 4. **Proyectos Destacados (`#projects`)**:
-   - Sistema de filtrado interactivo por categorías (*Todos*, *Frontend*, *Full Stack*, *Herramientas*).
-   - Tarjetas reutilizables `<article class="project-card">` con:
-     - **EduTrack UNEMI** (Full Stack): Soluciona la dispersión académica centralizando notas, asistencias y tareas.
-     - **EcoMarket Store** (Frontend): Catálogo sostenible con carrito reactivo y almacenamiento local.
-     - **DevPulse Metrics** (Herramientas): Dashboard de monitoreo en tiempo real para latencias y códigos HTTP de APIs.
-     - **TaskFlow Pro** (Frontend): Tablero Kanban interactivo con drag-and-drop y priorización por etiquetas.
+   - Sistema de filtrado interactivo por categorías (*Todos*, *Mobile Apps*, *Full Stack & Web*).
+   - Tarjetas reutilizables `<article class="project-card">` con proyectos reales:
+     - **LibrePDF** (Mobile App): Alternativa libre y gratuita a CamScanner para digitalizar fotos a PDF con filtros de realce, rotación y exportación (React Native & TypeScript).
+     - **LibreFree** (Mobile & Audio): Lector de libros electrónicos (EPUB, PDF) con síntesis de voz Text-to-Speech, SQLite offline y modo OLED (React Native & Expo).
+     - **SES-Platform** (Full Stack Web): Plataforma web en producción para gestión académica institucional, métricas de rendimiento y asistencia desplegada en Vercel.
+     - **acuaIA** (AI & Web Platform): Plataforma web inteligente para el sector acuícola que analiza telemetría y predice biomasa mediante modelos de IA desplegada en Vercel.
    - Cada proyecto cuenta con enlaces al código en GitHub, demo en vivo y botón "Ver detalles".
 
 5. **Design System / Componentes (`#design-system`)**:

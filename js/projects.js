@@ -1,84 +1,87 @@
 /**
  * PROJECTS CONTROLLER - FRANCISCO ARIAS PORTFOLIO
+ * Proyectos Reales de Francisco Arias (GitHub @FranciscoArias10)
  * Filtrado interactivo por categoría y modal detallado de proyectos con accesibilidad
  */
 
 export const projectsData = [
   {
-    id: 'edutrack',
-    title: 'EduTrack UNEMI - Portal Académico',
+    id: 'librepdf',
+    title: 'LibrePDF - Conversor & Escáner Móvil a PDF',
+    category: 'mobile',
+    categoryName: 'Mobile App',
+    problem: 'Apps comerciales imponen marcas de agua, suscripciones y anuncios',
+    shortDesc: 'Aplicación móvil libre, rápida y 100% gratuita para digitalizar fotos y convertirlas a PDF con filtros tipo CamScanner, reordenamiento de páginas y exportación.',
+    fullDesc: 'LibrePDF surge como una alternativa de código abierto y sin publicidad a herramientas comerciales de digitalización. Desarrollada con React Native y Expo SDK, permite a los usuarios capturar documentos desde la cámara o galería, aplicar filtros avanzados de realce, rotar y reordenar páginas dinámicamente, y configurar márgenes y formatos de hoja (A4, Carta, Oficio) para compartir al instante.',
+    features: [
+      'Captura mediante cámara y selección múltiple masiva desde la galería.',
+      'Filtros de realce profesionales: Magic Color, Alto Contraste B/N y Escala de Grises.',
+      'Reordenamiento visual de páginas, rotación nativa en 90° y eliminación dinámica.',
+      'Configuración avanzada de formatos (A4, Carta, Oficio), orientación y márgenes.',
+      'Exportación y compartición directa vía WhatsApp, correo y Google Drive sin marcas de agua.'
+    ],
+    technologies: ['React Native', 'TypeScript', 'Expo SDK 57', 'Image Manipulator', 'Print & FileSystem'],
+    image: 'assets/img/project-librepdf.jpg',
+    github: 'https://github.com/FranciscoArias10/LibrePDF',
+    demo: 'https://github.com/FranciscoArias10/LibrePDF'
+  },
+  {
+    id: 'librefree',
+    title: 'LibreFree - Lector de Libros & Audiolibros',
+    category: 'mobile',
+    categoryName: 'Mobile & Audio',
+    problem: 'Falta de lectores de libros offline con síntesis de voz gratuita y privacidad',
+    shortDesc: 'Lector de libros electrónicos (EPUB y PDF) con motor de lectura Ultra-HD, síntesis de voz en tiempo real (Text-to-Speech), almacenamiento local SQLite y modo oscuro OLED.',
+    fullDesc: 'LibreFree es una aplicación móvil moderna, libre y privada diseñada para la lectura y el aprendizaje continuo. Incorpora un lector adaptativo para formatos EPUB y PDF junto con un sintetizador de voz (TTS) integrado que transforma cualquier libro en audiolibro con control de velocidad. Toda la información de lectura, historial y marcadores se almacena 100% offline mediante SQLite, sin recopilar datos ni requerir cuentas.',
+    features: [
+      'Motor de lectura ultra nítido para archivos EPUB y PDF con escalado Retina.',
+      'Síntesis de voz Text-to-Speech (TTS) con selector de velocidades (0.75x a 2.0x).',
+      'Temas de lectura ergonómicos: Modo Claro, Sepia, Modo Noche y Modo OLED Puro.',
+      'Base de datos interna SQLite para almacenamiento seguro y sin conexión a internet.',
+      'Diseño moderno con barra flotante cápsula y navegación táctil optimizada.'
+    ],
+    technologies: ['React Native', 'TypeScript', 'Expo Speech & Audio', 'SQLite WAL', 'ePub.js / PDF.js'],
+    image: 'assets/img/project-librefree.jpg',
+    github: 'https://github.com/FranciscoArias10/librefree-React',
+    demo: 'https://github.com/FranciscoArias10/librefree-React'
+  },
+  {
+    id: 'sesplatform',
+    title: 'SES-Platform - Portal de Gestión Educativa',
     category: 'fullstack',
-    categoryName: 'Full Stack',
-    problem: 'Gestión dispersa de calificaciones y horarios',
-    shortDesc: 'Plataforma web integral para el seguimiento académico universitario, centralizando notas, asistencia, tareas y horarios en tiempo real.',
-    fullDesc: 'EduTrack UNEMI surge para resolver la fragmentación en la consulta de notas, tareas y horarios académicos. Proporciona a estudiantes y docentes una interfaz unificada, intuitiva y en tiempo real para el seguimiento del rendimiento universitario.',
+    categoryName: 'Full Stack Web',
+    problem: 'Descentralización de métricas académicas y seguimiento de estudiantes',
+    shortDesc: 'Plataforma web en producción para gestión académica institucional, métricas de rendimiento en tiempo real, seguimiento de asistencia y analítica de cursos.',
+    fullDesc: 'SES-Platform es una solución web empresarial desplegada en Vercel orientada a la administración educativa. Permite centralizar la gestión de asignaturas, calificaciones y progreso estudiantil a través de paneles analíticos interactivos y una experiencia de usuario rápida y moderna.',
     features: [
-      'Visualización gráfica del progreso académico y promedio ponderado.',
-      'Horario interactivo semanal con alertas de inicio de clases.',
-      'Gestión de entrega de tareas y repositorio de materiales por asignatura.',
-      'Arquitectura basada en componentes reutilizables con API REST.'
+      'Panel de control interactivo con métricas clave de rendimiento y curvas de interacción.',
+      'Seguimiento automatizado de tendencias de asistencia y reportes de progreso.',
+      'Módulo de administración de cursos activos, tareas pendientes y calificaciones.',
+      'Despliegue continuo de alta disponibilidad en Vercel con arquitectura escalable.'
     ],
-    technologies: ['HTML5 Semántico', 'CSS3 Grid/Flexbox', 'JavaScript ES6+', 'Node.js', 'PostgreSQL'],
-    image: 'assets/img/project-edutrack.jpg',
-    github: 'https://github.com/FranciscoArias10/edutrack-unemi',
-    demo: 'https://franciscoarias10.github.io/edutrack-unemi'
+    technologies: ['TypeScript', 'React', 'CSS Custom Props', 'REST APIs', 'Vercel'],
+    image: 'assets/img/project-sesplatform.jpg',
+    github: 'https://github.com/FranciscoArias10/SES-Platform',
+    demo: 'https://ses-platform-two.vercel.app'
   },
   {
-    id: 'ecomarket',
-    title: 'EcoMarket - E-commerce Sostenible',
-    category: 'frontend',
-    categoryName: 'Frontend',
-    problem: 'Poca visibilidad para productos ecológicos y compras lentas',
-    shortDesc: 'Catálogo de comercio electrónico centrado en productos sostenibles con carrito de compra reactivo, filtros dinámicos y persistencia local.',
-    fullDesc: 'EcoMarket es una aplicación web pensada para potenciar a productores ecológicos locales. Cuenta con una experiencia de compra fluida con filtros multicriterio, carrito reactivo en tiempo real y persistencia en localStorage sin recargar la página.',
+    id: 'acuaia',
+    title: 'acuaIA - Inteligencia Artificial Acuícola',
+    category: 'ai fullstack',
+    categoryName: 'IA & Web Platform',
+    problem: 'Monitoreo manual ineficiente de calidad de agua y predicción tardía de biomasa',
+    shortDesc: 'Plataforma web inteligente para el sector acuícola que analiza telemetría de piscinas camaroneras, oxígeno disuelto, pH y realiza predicciones de biomasa con IA.',
+    fullDesc: 'acuaIA es un sistema tecnológico desplegado en Vercel que aplica modelos de inteligencia artificial para la optimización de granjas camaroneras y acuícolas. Integra telemetría de sensores de oxígeno disuelto, temperatura y pH, correlacionando datos históricos para predecir el crecimiento de biomasa, la tasa de supervivencia y recomendar ventanas óptimas de cosecha.',
     features: [
-      'Carrito de compras interactivo con cálculo automático de totales e impuestos.',
-      'Filtros dinámicos por categorías (Bambú, Orgánico, Reutilizable) y rango de precio.',
-      'Diseño responsive adaptado meticulosamente a smartphones y tablets.',
-      'Almacenamiento persistente del estado del carrito en el navegador.'
+      'Monitoreo en tiempo real de telemetría de agua (oxígeno disuelto, temperatura y pH).',
+      'Predicción algorítmica de biomasa semanal y eficiencia de factor de conversión alimenticia (FCR).',
+      'Mapeo geoespacial de piscinas acuícolas con alertas críticas tempranas.',
+      'Interfaz web moderna de alta fidelidad estética con visualizaciones dinámicas.'
     ],
-    technologies: ['HTML5', 'CSS Variables', 'JavaScript Vanilla', 'LocalStorage API'],
-    image: 'assets/img/project-ecomarket.jpg',
-    github: 'https://github.com/FranciscoArias10/ecomarket-store',
-    demo: 'https://franciscoarias10.github.io/ecomarket-store'
-  },
-  {
-    id: 'devpulse',
-    title: 'DevPulse Metrics - API & Performance Monitor',
-    category: 'herramientas',
-    categoryName: 'Herramientas',
-    problem: 'Dificultad para diagnosticar cuellos de botella en APIs',
-    shortDesc: 'Dashboard analítico de rendimiento y disponibilidad de endpoints con visualización en tiempo real de latencias y códigos HTTP.',
-    fullDesc: 'DevPulse Metrics es una herramienta de observabilidad para desarrolladores que monitorea servicios web y microservicios. Permite identificar latencias anómalas, caídas de servicio y tasas de error 4xx/5xx en cuestión de segundos.',
-    features: [
-      'Gráficas en tiempo real de tiempos de respuesta por región geográfica.',
-      'Medidores de latencia con alertas visuales ante degradación del servicio.',
-      'Distribución porcentual de códigos de estado HTTP (2xx, 4xx, 5xx).',
-      'Filtrado y búsqueda instantánea en logs recientes de peticiones.'
-    ],
-    technologies: ['JavaScript ES6+', 'CSS Custom Properties', 'SVG Canvas', 'REST API', 'WebSockets'],
-    image: 'assets/img/project-devpulse.jpg',
-    github: 'https://github.com/FranciscoArias10/devpulse-metrics',
-    demo: 'https://franciscoarias10.github.io/devpulse-metrics'
-  },
-  {
-    id: 'taskflow',
-    title: 'TaskFlow Pro - Gestor Ágil Kanban',
-    category: 'frontend',
-    categoryName: 'Frontend',
-    problem: 'Seguimiento desorganizado de tareas en equipos ágiles',
-    shortDesc: 'Tablero Kanban interactivo para flujos de trabajo Scrum y Kanban con asignación de etiquetas de prioridad y estados personalizables.',
-    fullDesc: 'TaskFlow Pro agiliza la gestión de proyectos de desarrollo mediante tableros dinámicos. Los usuarios pueden crear tareas, priorizarlas por etiquetas de criticidad y moverlas entre columnas para visualizar el avance del sprint.',
-    features: [
-      'Columnas de flujo de trabajo: Backlog, En Progreso, Revisión de Código y Finalizado.',
-      'Etiquetado por criticidad (Crítico, UI/UX, Backend, Feature).',
-      'Contador en tiempo real de tarjetas activas por columna.',
-      'Persistencia automática de estados y tareas en almacenamiento local.'
-    ],
-    technologies: ['HTML5 Drag & Drop', 'CSS Modern Flexbox', 'JavaScript Modular', 'LocalStorage'],
-    image: 'assets/img/project-taskflow.jpg',
-    github: 'https://github.com/FranciscoArias10/taskflow-pro',
-    demo: 'https://franciscoarias10.github.io/taskflow-pro'
+    technologies: ['JavaScript', 'Machine Learning', 'Data Visualization', 'CSS Custom Props', 'Vercel'],
+    image: 'assets/img/project-acuaia.jpg',
+    github: 'https://github.com/FranciscoArias10/acuaIA',
+    demo: 'https://acua-ia.vercel.app'
   }
 ];
 
@@ -104,8 +107,8 @@ export function initProjects() {
 
       // Filtrar tarjetas
       projectItems.forEach(item => {
-        const itemCategory = item.getAttribute('data-category');
-        if (filterValue === 'all' || itemCategory === filterValue) {
+        const itemCategories = (item.getAttribute('data-category') || '').split(' ');
+        if (filterValue === 'all' || itemCategories.includes(filterValue)) {
           item.classList.remove('hidden');
           setTimeout(() => {
             item.style.opacity = '1';

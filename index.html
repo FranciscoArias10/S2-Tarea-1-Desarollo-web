@@ -550,152 +550,153 @@
         <!-- Filtros Dinámicos de Proyectos (Interactividad JS) -->
         <div class="project-filters" role="tablist" aria-label="Filtro de proyectos por tecnología">
           <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos (4)</button>
-          <button type="button" class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
-          <button type="button" class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack</button>
-          <button type="button" class="filter-btn" data-filter="herramientas" role="tab" aria-selected="false">Herramientas</button>
+          <button type="button" class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile Apps</button>
+          <button type="button" class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack & Web</button>
         </div>
 
         <!-- Grilla de Proyectos con Artículos Semánticos -->
         <div class="projects-grid">
 
-          <!-- PROYECTO 1: EduTrack UNEMI -->
+          <!-- PROYECTO 1: LibrePDF -->
+          <div class="project-item" data-category="mobile">
+            <article class="project-card">
+              <figure>
+                <img src="./assets/img/project-librepdf.jpg" alt="Captura de la aplicación móvil LibrePDF" loading="lazy">
+                <span class="badge badge-primary project-badge-overlay">Mobile App</span>
+                <figcaption class="visually-hidden">Vista previa de LibrePDF</figcaption>
+              </figure>
+              <div class="project-card-body">
+                <h3 class="project-card-title">LibrePDF</h3>
+                <div class="project-card-problem">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  <span>Problema: Apps con marcas de agua y anuncios</span>
+                </div>
+                <p class="project-card-desc">
+                  Alternativa libre y 100% gratuita a CamScanner desarrollada con React Native y Expo para digitalizar fotos a PDF con filtros avanzados, rotación y reordenamiento de páginas.
+                </p>
+                <div class="project-tech-list">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Expo SDK 57</span>
+                  <span class="tech-tag">Image Manipulator</span>
+                  <span class="tech-tag">Print API</span>
+                </div>
+                <div class="project-card-actions">
+                  <button type="button" class="btn btn-outline btn-sm btn-view-details" data-project-id="librepdf">
+                    <span>Ver detalles</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                  <div style="display: flex; gap: 0.35rem;">
+                    <a href="https://github.com/FranciscoArias10/LibrePDF" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver código de LibrePDF en GitHub" title="Repositorio en GitHub">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                      </svg>
+                    </a>
+                    <a href="https://github.com/FranciscoArias10/LibrePDF" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver proyecto LibrePDF" title="Ver Proyecto en GitHub">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PROYECTO 2: LibreFree -->
+          <div class="project-item" data-category="mobile">
+            <article class="project-card">
+              <figure>
+                <img src="./assets/img/project-librefree.jpg" alt="Lector de libros y audiolibros LibreFree" loading="lazy">
+                <span class="badge badge-secondary project-badge-overlay">Mobile & Audio</span>
+                <figcaption class="visually-hidden">Vista previa de LibreFree</figcaption>
+              </figure>
+              <div class="project-card-body">
+                <h3 class="project-card-title">LibreFree</h3>
+                <div class="project-card-problem">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  <span>Problema: Lectores con suscripción y sin voz offline</span>
+                </div>
+                <p class="project-card-desc">
+                  Lector móvil de libros electrónicos (EPUB y PDF) con síntesis de voz en tiempo real (TTS) para audiolibros, almacenamiento local SQLite y modo oscuro OLED.
+                </p>
+                <div class="project-tech-list">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Expo Speech</span>
+                  <span class="tech-tag">SQLite</span>
+                  <span class="tech-tag">ePub.js</span>
+                </div>
+                <div class="project-card-actions">
+                  <button type="button" class="btn btn-outline btn-sm btn-view-details" data-project-id="librefree">
+                    <span>Ver detalles</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                  <div style="display: flex; gap: 0.35rem;">
+                    <a href="https://github.com/FranciscoArias10/librefree-React" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver código de LibreFree en GitHub" title="Repositorio en GitHub">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                      </svg>
+                    </a>
+                    <a href="https://github.com/FranciscoArias10/librefree-React" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver proyecto LibreFree" title="Ver Proyecto en GitHub">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PROYECTO 3: SES-Platform -->
           <div class="project-item" data-category="fullstack">
             <article class="project-card">
               <figure>
-                <img src="./assets/img/project-edutrack.jpg" alt="Panel de control de la plataforma académica EduTrack UNEMI" loading="lazy">
-                <span class="badge badge-primary project-badge-overlay">Full Stack</span>
-                <figcaption class="visually-hidden">Vista previa de EduTrack UNEMI</figcaption>
+                <img src="./assets/img/project-sesplatform.jpg" alt="Portal institucional SES-Platform" loading="lazy">
+                <span class="badge badge-accent project-badge-overlay">Full Stack</span>
+                <figcaption class="visually-hidden">Vista previa de SES-Platform</figcaption>
               </figure>
               <div class="project-card-body">
-                <h3 class="project-card-title">EduTrack UNEMI</h3>
+                <h3 class="project-card-title">SES-Platform</h3>
                 <div class="project-card-problem">
                   <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <circle cx="12" cy="12" r="10"></circle>
                     <line x1="12" y1="8" x2="12" y2="12"></line>
                     <line x1="12" y1="16" x2="12.01" y2="16"></line>
                   </svg>
-                  <span>Problema: Dispersión de notas y horarios</span>
+                  <span>Problema: Gestión fragmentada de métricas educativas</span>
                 </div>
                 <p class="project-card-desc">
-                  Plataforma web académica que centraliza la visualización de notas, cálculo de promedios ponderados, horarios de clase y entrega de tareas para estudiantes universitarios.
+                  Plataforma web en producción para instituciones académicas que centraliza reportes de asistencia, rendimiento estudiantil y seguimiento de cursos activos.
                 </p>
                 <div class="project-tech-list">
-                  <span class="tech-tag">HTML5</span>
-                  <span class="tech-tag">CSS Grid</span>
-                  <span class="tech-tag">JavaScript</span>
-                  <span class="tech-tag">Node.js</span>
-                  <span class="tech-tag">PostgreSQL</span>
-                </div>
-                <div class="project-card-actions">
-                  <button type="button" class="btn btn-outline btn-sm btn-view-details" data-project-id="edutrack">
-                    <span>Ver detalles</span>
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </button>
-                  <div style="display: flex; gap: 0.35rem;">
-                    <a href="https://github.com/FranciscoArias10/edutrack-unemi" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver código de EduTrack UNEMI en GitHub" title="Repositorio en GitHub">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                      </svg>
-                    </a>
-                    <a href="https://franciscoarias10.github.io/edutrack-unemi" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver demo de EduTrack UNEMI desplegado" title="Ver Demo en Vivo">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- PROYECTO 2: EcoMarket -->
-          <div class="project-item" data-category="frontend">
-            <article class="project-card">
-              <figure>
-                <img src="./assets/img/project-ecomarket.jpg" alt="Catálogo de productos e-commerce de EcoMarket" loading="lazy">
-                <span class="badge badge-success project-badge-overlay">Frontend</span>
-                <figcaption class="visually-hidden">Vista previa de EcoMarket</figcaption>
-              </figure>
-              <div class="project-card-body">
-                <h3 class="project-card-title">EcoMarket Store</h3>
-                <div class="project-card-problem">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="12"></line>
-                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                  </svg>
-                  <span>Problema: Venta lenta de productos ecológicos</span>
-                </div>
-                <p class="project-card-desc">
-                  Catálogo e-commerce sostenible con filtrado instantáneo por categoría, carrito reactivo desplegable con cálculo en tiempo real y persistencia en LocalStorage.
-                </p>
-                <div class="project-tech-list">
-                  <span class="tech-tag">HTML5</span>
-                  <span class="tech-tag">CSS Flexbox</span>
-                  <span class="tech-tag">JavaScript ES6</span>
-                  <span class="tech-tag">LocalStorage</span>
-                </div>
-                <div class="project-card-actions">
-                  <button type="button" class="btn btn-outline btn-sm btn-view-details" data-project-id="ecomarket">
-                    <span>Ver detalles</span>
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </button>
-                  <div style="display: flex; gap: 0.35rem;">
-                    <a href="https://github.com/FranciscoArias10/ecomarket-store" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver código de EcoMarket en GitHub" title="Repositorio en GitHub">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                      </svg>
-                    </a>
-                    <a href="https://franciscoarias10.github.io/ecomarket-store" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver demo de EcoMarket desplegado" title="Ver Demo en Vivo">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- PROYECTO 3: DevPulse Metrics -->
-          <div class="project-item" data-category="herramientas">
-            <article class="project-card">
-              <figure>
-                <img src="./assets/img/project-devpulse.jpg" alt="Panel de métricas de APIs de DevPulse" loading="lazy">
-                <span class="badge badge-accent project-badge-overlay">Herramientas</span>
-                <figcaption class="visually-hidden">Vista previa de DevPulse Metrics</figcaption>
-              </figure>
-              <div class="project-card-body">
-                <h3 class="project-card-title">DevPulse Metrics</h3>
-                <div class="project-card-problem">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="12"></line>
-                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                  </svg>
-                  <span>Problema: Detección tardía de caídas de API</span>
-                </div>
-                <p class="project-card-desc">
-                  Herramienta de monitoreo visual en tiempo real para evaluar la salud de APIs, gráficas interactivas de latencias, medidores de uptime y desglose de códigos HTTP.
-                </p>
-                <div class="project-tech-list">
-                  <span class="tech-tag">JavaScript ES6+</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">React</span>
                   <span class="tech-tag">CSS Custom Props</span>
                   <span class="tech-tag">REST API</span>
-                  <span class="tech-tag">WebSockets</span>
+                  <span class="tech-tag">Vercel</span>
                 </div>
                 <div class="project-card-actions">
-                  <button type="button" class="btn btn-outline btn-sm btn-view-details" data-project-id="devpulse">
+                  <button type="button" class="btn btn-outline btn-sm btn-view-details" data-project-id="sesplatform">
                     <span>Ver detalles</span>
                     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                       <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -703,12 +704,12 @@
                     </svg>
                   </button>
                   <div style="display: flex; gap: 0.35rem;">
-                    <a href="https://github.com/FranciscoArias10/devpulse-metrics" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver código de DevPulse en GitHub" title="Repositorio en GitHub">
+                    <a href="https://github.com/FranciscoArias10/SES-Platform" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver código de SES-Platform en GitHub" title="Repositorio en GitHub">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                       </svg>
                     </a>
-                    <a href="https://franciscoarias10.github.io/devpulse-metrics" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver demo de DevPulse desplegado" title="Ver Demo en Vivo">
+                    <a href="https://ses-platform-two.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver demo de SES-Platform desplegado" title="Ver Demo en Vivo (Vercel)">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                         <polyline points="15 3 21 3 21 9"></polyline>
@@ -721,35 +722,36 @@
             </article>
           </div>
 
-          <!-- PROYECTO 4: TaskFlow Pro -->
-          <div class="project-item" data-category="frontend">
+          <!-- PROYECTO 4: acuaIA -->
+          <div class="project-item" data-category="fullstack">
             <article class="project-card">
               <figure>
-                <img src="./assets/img/project-taskflow.jpg" alt="Tablero Kanban ágil de TaskFlow Pro" loading="lazy">
-                <span class="badge badge-secondary project-badge-overlay">Frontend</span>
-                <figcaption class="visually-hidden">Vista previa de TaskFlow Pro</figcaption>
+                <img src="./assets/img/project-acuaia.jpg" alt="Panel de inteligencia artificial acuaIA para acuicultura" loading="lazy">
+                <span class="badge badge-success project-badge-overlay">AI & Web</span>
+                <figcaption class="visually-hidden">Vista previa de acuaIA</figcaption>
               </figure>
               <div class="project-card-body">
-                <h3 class="project-card-title">TaskFlow Pro</h3>
+                <h3 class="project-card-title">acuaIA</h3>
                 <div class="project-card-problem">
                   <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <circle cx="12" cy="12" r="10"></circle>
                     <line x1="12" y1="8" x2="12" y2="12"></line>
                     <line x1="12" y1="16" x2="12.01" y2="16"></line>
                   </svg>
-                  <span>Problema: Desorganización de sprints en equipos</span>
+                  <span>Problema: Control manual ineficiente de calidad de agua</span>
                 </div>
                 <p class="project-card-desc">
-                  Tablero Kanban interactivo para flujos de trabajo ágiles, soporte de drag & drop, etiquetas de criticidad por color y persistencia de columnas.
+                  Plataforma web inteligente para el sector acuícola que analiza telemetría de piscinas camaroneras, oxígeno disuelto, pH y realiza predicciones de biomasa con IA.
                 </p>
                 <div class="project-tech-list">
-                  <span class="tech-tag">HTML5 Drag&Drop</span>
-                  <span class="tech-tag">CSS Variables</span>
-                  <span class="tech-tag">JavaScript Modular</span>
-                  <span class="tech-tag">LocalStorage</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Machine Learning</span>
+                  <span class="tech-tag">Data Viz</span>
+                  <span class="tech-tag">CSS Custom Props</span>
+                  <span class="tech-tag">Vercel</span>
                 </div>
                 <div class="project-card-actions">
-                  <button type="button" class="btn btn-outline btn-sm btn-view-details" data-project-id="taskflow">
+                  <button type="button" class="btn btn-outline btn-sm btn-view-details" data-project-id="acuaia">
                     <span>Ver detalles</span>
                     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                       <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -757,12 +759,12 @@
                     </svg>
                   </button>
                   <div style="display: flex; gap: 0.35rem;">
-                    <a href="https://github.com/FranciscoArias10/taskflow-pro" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver código de TaskFlow Pro en GitHub" title="Repositorio en GitHub">
+                    <a href="https://github.com/FranciscoArias10/acuaIA" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver código de acuaIA en GitHub" title="Repositorio en GitHub">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                       </svg>
                     </a>
-                    <a href="https://franciscoarias10.github.io/taskflow-pro" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver demo de TaskFlow Pro desplegado" title="Ver Demo en Vivo">
+                    <a href="https://acua-ia.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm" aria-label="Ver demo de acuaIA desplegado" title="Ver Demo en Vivo (Vercel)">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                         <polyline points="15 3 21 3 21 9"></polyline>
@@ -917,7 +919,7 @@
             <div class="typo-specimen-row">
               <span class="typo-meta">Encabezado H3 — clamp(1.25rem, 2.5vw, 1.5rem) • SemiBold 600</span>
               <p style="font-size: var(--text-xl); font-weight: var(--font-weight-semibold); color: var(--color-text); margin: 0;">
-                EduTrack UNEMI - Sistema de Gestión
+                LibrePDF - Conversor & Escáner Móvil
               </p>
             </div>
 
@@ -1232,7 +1234,7 @@
         </svg>
       </button>
 
-      <img id="modal-img" src="./assets/img/project-edutrack.jpg" alt="Captura ampliada del proyecto" class="modal-content-img">
+      <img id="modal-img" src="./assets/img/project-librepdf.jpg" alt="Captura ampliada del proyecto" class="modal-content-img">
 
       <div class="modal-body">
         <div class="modal-category">

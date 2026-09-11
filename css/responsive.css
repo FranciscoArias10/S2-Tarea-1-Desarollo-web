@@ -1,0 +1,253 @@
+/**
+ * RESPONSIVE DESIGN - FRANCISCO ARIAS PORTFOLIO
+ * Adaptabilidad en dispositivos desktop, tablets y teléfonos móviles
+ */
+
+/* ==========================================================================
+   DISPOSITIVOS MEDIANOS Y TABLETS (<= 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  :root {
+    --container-padding: 1.25rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-xl);
+  }
+
+  .hero-avatar-wrapper {
+    width: 270px;
+    height: 270px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+/* ==========================================================================
+   TABLETS Y TELÉFONOS (<= 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+    --container-padding: 1rem;
+    --space-3xl: 2.75rem;
+  }
+
+  /* Hamburguesa y Menú Móvil */
+  .nav-toggle-btn {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+    z-index: var(--z-header);
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-xs);
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-base);
+    border-radius: var(--radius-md);
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+  .nav-link.active {
+    background: var(--color-primary-subtle);
+  }
+
+  /* Hero Section Mobile */
+  .hero-section {
+    min-height: auto;
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-2xl);
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-2xl);
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-subtitle {
+    margin-inline: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-tech-stack {
+    align-items: center;
+  }
+
+  .hero-tech-icons {
+    justify-content: center;
+  }
+
+  .hero-avatar-wrapper {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-floating-badge {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .badge-top-left {
+    left: -10px;
+    top: 0;
+  }
+
+  .badge-bottom-right {
+    right: -10px;
+    bottom: 0;
+  }
+
+  /* Grillas generales */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .component-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   TELÉFONOS PEQUEÑOS (<= 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 0.875rem;
+    --text-3xl: 1.75rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-avatar-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-floating-badge {
+    display: none; /* Simplificar en pantallas ultra compactas para evitar desbordamientos */
+  }
+
+  .filter-btn {
+    font-size: var(--text-xs);
+    padding: 0.45rem 0.85rem;
+  }
+
+  .contact-form-card {
+    padding: var(--space-lg);
+  }
+
+  .ds-block {
+    padding: var(--space-md);
+  }
+
+  .color-swatches-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .spacing-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2xs);
+  }
+
+  .spacing-bar-track {
+    width: 100%;
+  }
+
+  .modal-dialog {
+    max-height: 95vh;
+  }
+
+  .modal-body {
+    padding: var(--space-md);
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions .btn {
+    width: 100%;
+  }
+
+  .back-to-top {
+    left: auto;
+    right: var(--space-md);
+    bottom: var(--space-md);
+  }
+
+  .toast-container {
+    right: var(--space-sm);
+    left: var(--space-sm);
+    bottom: var(--space-sm);
+  }
+}

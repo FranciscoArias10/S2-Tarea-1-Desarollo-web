@@ -25,5 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. Inicializar utilidades del Design System
   initDesignSystem();
 
-  console.log('%c🚀 Portafolio de Francisco Arias inicializado correctamente.', 'color: #3b82f6; font-weight: bold; font-size: 14px;');
+  console.log('%c🚀 Portafolio de Francisco Arias inicializado correctamente.', 'color: #ff1e42; font-weight: bold; font-size: 14px;');
 });

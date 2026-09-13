@@ -118,7 +118,7 @@ El diseño utiliza **CSS Custom Properties** de manera exhaustiva en `:root` y `
 ```css
 :root {
   /* Tokens de Color Primarios */
-  --color-primary: #3b82f6;
+  --color-primary: #ff1e42;
   --color-secondary: #8b5cf6;
   --color-accent: #06b6d4;
   --color-bg: #090d16;

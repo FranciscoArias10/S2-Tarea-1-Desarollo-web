@@ -29,13 +29,13 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #2563eb 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #e00028 100%);
   color: #ffffff;
   box-shadow: 0 4px 14px var(--color-primary-glow);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--color-primary-hover) 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, var(--color-primary-hover) 0%, #b80020 100%);
   color: #ffffff;
   box-shadow: 0 6px 20px var(--color-primary-glow);
   transform: translateY(-2px);
@@ -120,7 +120,7 @@
 .badge-primary {
   background: var(--color-primary-subtle);
   color: var(--color-primary);
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  border: 1px solid rgba(255, 30, 66, 0.3);
 }
 
 .badge-secondary {

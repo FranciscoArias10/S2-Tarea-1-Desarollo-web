@@ -28,7 +28,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   background-image: 
-    radial-gradient(circle at 15% 15%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 15% 15%, rgba(255, 30, 66, 0.08) 0%, transparent 40%),
     radial-gradient(circle at 85% 65%, rgba(139, 92, 246, 0.06) 0%, transparent 45%);
   background-attachment: fixed;
   transition: background-color var(--transition-normal), color var(--transition-normal);
@@ -153,7 +153,7 @@ button, input, textarea, select {
   text-transform: uppercase;
   color: var(--color-primary);
   background-color: var(--color-primary-subtle);
-  border: 1px solid rgba(59, 130, 246, 0.25);
+  border: 1px solid rgba(255, 30, 66, 0.25);
   border-radius: var(--radius-full);
   margin-bottom: var(--space-sm);
 }

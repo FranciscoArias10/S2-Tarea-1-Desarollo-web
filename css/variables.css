@@ -8,11 +8,11 @@
   /* ==========================================================================
      PALETA DE COLORES - TEMA OSCURO (Por defecto)
      ========================================================================== */
-  --color-primary: #3b82f6;
-  --color-primary-hover: #2563eb;
-  --color-primary-active: #1d4ed8;
-  --color-primary-subtle: rgba(59, 130, 246, 0.15);
-  --color-primary-glow: rgba(59, 130, 246, 0.35);
+  --color-primary: #ff1e42;
+  --color-primary-hover: #e00028;
+  --color-primary-active: #b80020;
+  --color-primary-subtle: rgba(255, 30, 66, 0.15);
+  --color-primary-glow: rgba(255, 30, 66, 0.4);
 
   --color-secondary: #8b5cf6;
   --color-secondary-hover: #7c3aed;
@@ -36,7 +36,7 @@
   --color-surface-elevated: #1a243c;
   --color-surface-hover: #222f4c;
   --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-hover: rgba(59, 130, 246, 0.4);
+  --color-border-hover: rgba(255, 30, 66, 0.4);
 
   /* Tipografía y Textos (Dark) */
   --color-text: #f8fafc;
@@ -53,7 +53,7 @@
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 30px rgba(59, 130, 246, 0.25);
+  --shadow-glow: 0 0 30px rgba(255, 30, 66, 0.3);
   --shadow-glow-accent: 0 0 30px rgba(6, 182, 212, 0.25);
 
   /* ==========================================================================
@@ -134,11 +134,11 @@
    PALETA DE COLORES - TEMA CLARO
    ========================================================================== */
 [data-theme="light"] {
-  --color-primary: #2563eb;
-  --color-primary-hover: #1d4ed8;
-  --color-primary-active: #1e40af;
-  --color-primary-subtle: rgba(37, 99, 235, 0.1);
-  --color-primary-glow: rgba(37, 99, 235, 0.2);
+  --color-primary: #e11d48;
+  --color-primary-hover: #be123c;
+  --color-primary-active: #9f1239;
+  --color-primary-subtle: rgba(225, 29, 72, 0.12);
+  --color-primary-glow: rgba(225, 29, 72, 0.25);
 
   --color-secondary: #7c3aed;
   --color-secondary-hover: #6d28d9;
@@ -162,7 +162,7 @@
   --color-surface-elevated: #ffffff;
   --color-surface-hover: #f1f5f9;
   --color-border: rgba(15, 23, 42, 0.1);
-  --color-border-hover: rgba(37, 99, 235, 0.4);
+  --color-border-hover: rgba(225, 29, 72, 0.4);
 
   /* Tipografía y Textos (Light) */
   --color-text: #0f172a;
@@ -179,6 +179,6 @@
   --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
   --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08), 0 2px 4px rgba(15, 23, 42, 0.04);
   --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.12), 0 4px 8px rgba(15, 23, 42, 0.04);
-  --shadow-glow: 0 0 24px rgba(37, 99, 235, 0.18);
+  --shadow-glow: 0 0 24px rgba(225, 29, 72, 0.2);
   --shadow-glow-accent: 0 0 24px rgba(2, 132, 199, 0.18);
 }

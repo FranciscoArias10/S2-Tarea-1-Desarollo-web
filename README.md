@@ -302,5 +302,6 @@ El desarrollo se realizó siguiendo el estándar de **Conventional Commits**, ga
 * **Institución**: Universidad Estatal de Milagro (UNEMI)
 * **Correo institucional**: [fariasp2@unemi.edu.ec](mailto:fariasp2@unemi.edu.ec)
 * **GitHub**: [@FranciscoArias10](https://github.com/FranciscoArias10)
+* **LinkedIn**: [Francisco Steven Arias Pérez](https://www.linkedin.com/in/francisco-steven-arias-p%C3%A9rez-5b8663219/)
 
 Desarrollado con dedicación para la materia de Desarrollo Web.

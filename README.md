@@ -14,12 +14,13 @@ Portafolio web personal e interactivo de **Francisco Arias**, estudiante de la c
 1. [Resumen del Proyecto](#-resumen-del-proyecto)
 2. [Estructura del Repositorio](#-estructura-del-repositorio)
 3. [Secciones del Portafolio](#-secciones-del-portafolio)
-4. [Arquitectura CSS & Design System](#-arquitectura-css--design-system)
-5. [Interactividad JavaScript Implementada](#-interactividad-javascript-implementada)
-6. [Instrucciones de Ejecución Local](#-instrucciones-de-ejecución-local)
-7. [Guía de Despliegue en GitHub Pages](#-guía-de-despliegue-en-github-pages)
-8. [Control de Versiones & Commits](#-control-de-versiones--commits)
-9. [Créditos & Contacto](#-créditos--contacto)
+4. [Capturas del Resultado & Proyectos](#-capturas-del-resultado--proyectos)
+5. [Arquitectura CSS & Design System](#-arquitectura-css--design-system)
+6. [Interactividad JavaScript Implementada](#-interactividad-javascript-implementada)
+7. [Instrucciones de Ejecución Local](#-instrucciones-de-ejecución-local)
+8. [Guía de Despliegue en GitHub Pages](#-guía-de-despliegue-en-github-pages)
+9. [Control de Versiones & Commits](#-control-de-versiones--commits)
+10. [Créditos & Contacto](#-créditos--contacto)
 
 ---
 
@@ -108,6 +109,61 @@ S2-Tarea#1-Desarollo-web/
 
 7. **Footer (`<footer>`)**:
    - Información de copyright semántica, enlaces de navegación y créditos técnicos.
+
+---
+
+## 📸 Capturas del Resultado & Proyectos
+
+A continuación se presentan las capturas reales de los proyectos destacados y recursos visuales integrados en el portafolio:
+
+### 1. LibrePDF — Conversor & Escáner Móvil
+> Alternativa libre y gratuita a CamScanner desarrollada con React Native, TypeScript y Expo SDK 57.
+
+![Captura de LibrePDF](./assets/img/project-librepdf.jpg)
+
+* **Repositorio**: [GitHub - LibrePDF](https://github.com/FranciscoArias10/LibrePDF)
+* **Categoría**: Mobile Application
+
+---
+
+### 2. LibreFree — Lector de Libros & Audiolibros
+> Lector móvil para EPUB y PDF con síntesis de voz en tiempo real (Text-to-Speech), SQLite local y modo OLED.
+
+![Captura de LibreFree](./assets/img/project-librefree.jpg)
+
+* **Repositorio**: [GitHub - LibreFree](https://github.com/FranciscoArias10/librefree-React)
+* **Categoría**: Mobile & Audio Application
+
+---
+
+### 3. SES-Platform — Portal de Gestión Educativa
+> Plataforma web en producción para analítica académica institucional y control de métricas de rendimiento.
+
+![Captura de SES-Platform](./assets/img/project-sesplatform.jpg)
+
+* **Repositorio**: [GitHub - SES-Platform](https://github.com/FranciscoArias10/SES-Platform)
+* **Demo en Vivo**: [ses-platform-two.vercel.app](https://ses-platform-two.vercel.app)
+* **Categoría**: Full Stack Web
+
+---
+
+### 4. acuaIA — Inteligencia Artificial Acuícola
+> Plataforma web inteligente que correlaciona telemetría de calidad de agua y predice biomasa mediante IA.
+
+![Captura de acuaIA](./assets/img/project-acuaia.jpg)
+
+* **Repositorio**: [GitHub - acuaIA](https://github.com/FranciscoArias10/acuaIA)
+* **Demo en Vivo**: [acua-ia.vercel.app](https://acua-ia.vercel.app)
+* **Categoría**: AI & Web Platform
+
+---
+
+### 5. Fotografía Profesional
+> Avatar oficial de presentación profesional integrado en el Hero y el Brand Header del portafolio.
+
+<p align="center">
+  <img src="./assets/img/profile.jpg" alt="Francisco Arias - Fotografía Profesional" width="220" style="border-radius: 50%;">
+</p>
 
 ---
 

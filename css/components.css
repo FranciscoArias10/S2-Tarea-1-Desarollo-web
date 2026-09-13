@@ -1,11 +1,3 @@
-/**
- * COMPONENTS - FRANCISCO ARIAS PORTFOLIO
- * Componentes modulares, consistentes y reutilizables
- */
-
-/* ==========================================================================
-   BOTONES
-   ========================================================================== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -103,9 +95,6 @@
   height: 1.25rem;
 }
 
-/* ==========================================================================
-   BADGES & CHIPS
-   ========================================================================== */
 .badge {
   display: inline-flex;
   align-items: center;
@@ -165,9 +154,6 @@
   }
 }
 
-/* ==========================================================================
-   CARDS
-   ========================================================================== */
 .card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -184,7 +170,6 @@
   transform: translateY(-4px);
 }
 
-/* Project Card */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -289,7 +274,6 @@
   border-top: 1px solid var(--color-border);
 }
 
-/* Skill Card */
 .skill-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -372,9 +356,6 @@
   transition: width 1s ease-in-out;
 }
 
-/* ==========================================================================
-   FORMULARIO Y ENTRADAS (INPUTS)
-   ========================================================================== */
 .form-group {
   margin-bottom: var(--space-lg);
   position: relative;
@@ -458,9 +439,6 @@
   color: var(--color-text-dim);
 }
 
-/* ==========================================================================
-   MODAL DIALOG (PROYECTO DETALLES)
-   ========================================================================== */
 .modal {
   position: fixed;
   inset: 0;
@@ -580,9 +558,6 @@
   border-top: 1px solid var(--color-border);
 }
 
-/* ==========================================================================
-   TOAST NOTIFICATION
-   ========================================================================== */
 .toast-container {
   position: fixed;
   bottom: var(--space-xl);
@@ -639,9 +614,6 @@
   color: var(--color-primary);
 }
 
-/* ==========================================================================
-   BOTÓN FLOTANTE "VOLVER ARRIBA"
-   ========================================================================== */
 .back-to-top {
   position: fixed;
   bottom: var(--space-xl);

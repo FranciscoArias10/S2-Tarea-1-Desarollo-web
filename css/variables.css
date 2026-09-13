@@ -1,13 +1,5 @@
-/**
- * DESIGN SYSTEM TOKENS - FRANCISCO ARIAS PORTFOLIO
- * Arquitectura de variables CSS Custom Properties
- * Soporte nativo para modo oscuro y claro
- */
-
 :root {
-  /* ==========================================================================
-     PALETA DE COLORES - TEMA OSCURO (Por defecto)
-     ========================================================================== */
+
   --color-primary: #ff1e42;
   --color-primary-hover: #e00028;
   --color-primary-active: #b80020;
@@ -29,7 +21,7 @@
   --color-danger: #ef4444;
   --color-danger-subtle: rgba(239, 68, 68, 0.15);
 
-  /* Superficies y Fondos (Dark) */
+  
   --color-bg: #090d16;
   --color-bg-alt: #0d1322;
   --color-surface: #131b2e;
@@ -38,40 +30,38 @@
   --color-border: rgba(255, 255, 255, 0.08);
   --color-border-hover: rgba(255, 30, 66, 0.4);
 
-  /* Tipografía y Textos (Dark) */
+  
   --color-text: #f8fafc;
   --color-text-muted: #94a3b8;
   --color-text-dim: #64748b;
   --color-text-inverse: #090d16;
 
-  /* Efectos de Cristal / Glassmorphism */
+  
   --glass-bg: rgba(19, 27, 46, 0.75);
   --glass-border: rgba(255, 255, 255, 0.1);
   --glass-blur: blur(14px);
 
-  /* Sombras (Dark) */
+  
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
   --shadow-glow: 0 0 30px rgba(255, 30, 66, 0.3);
   --shadow-glow-accent: 0 0 30px rgba(6, 182, 212, 0.25);
 
-  /* ==========================================================================
-     TIPOGRAFÍA
-     ========================================================================== */
+  
   --font-primary: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  --text-xs: 0.75rem;    /* 12px */
-  --text-sm: 0.875rem;   /* 14px */
-  --text-base: 1rem;     /* 16px */
-  --text-md: 1.125rem;   /* 18px */
-  --text-lg: 1.25rem;    /* 20px */
-  --text-xl: 1.5rem;     /* 24px */
-  --text-2xl: 1.875rem;  /* 30px */
-  --text-3xl: 2.25rem;   /* 36px */
-  --text-4xl: 3rem;      /* 48px */
-  --text-5xl: 3.75rem;   /* 60px */
+  --text-xs: 0.75rem;    
+  --text-sm: 0.875rem;   
+  --text-base: 1rem;     
+  --text-md: 1.125rem;   
+  --text-lg: 1.25rem;    
+  --text-xl: 1.5rem;     
+  --text-2xl: 1.875rem;  
+  --text-3xl: 2.25rem;   
+  --text-4xl: 3rem;      
+  --text-5xl: 3.75rem;   
 
   --font-weight-light: 300;
   --font-weight-normal: 400;
@@ -84,45 +74,37 @@
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.7;
 
-  /* ==========================================================================
-     SISTEMA DE ESPACIADO
-     ========================================================================== */
-  --space-3xs: 0.125rem; /* 2px */
-  --space-2xs: 0.25rem;  /* 4px */
-  --space-xs: 0.5rem;    /* 8px */
-  --space-sm: 0.75rem;   /* 12px */
-  --space-md: 1rem;      /* 16px */
-  --space-lg: 1.5rem;    /* 24px */
-  --space-xl: 2rem;      /* 32px */
-  --space-2xl: 3rem;     /* 48px */
-  --space-3xl: 4rem;     /* 64px */
-  --space-4xl: 6rem;     /* 96px */
+  
+  --space-3xs: 0.125rem; 
+  --space-2xs: 0.25rem;  
+  --space-xs: 0.5rem;    
+  --space-sm: 0.75rem;   
+  --space-md: 1rem;      
+  --space-lg: 1.5rem;    
+  --space-xl: 2rem;      
+  --space-2xl: 3rem;     
+  --space-3xl: 4rem;     
+  --space-4xl: 6rem;     
 
-  /* ==========================================================================
-     RADIO DE BORDES (BORDER RADIUS)
-     ========================================================================== */
-  --radius-xs: 0.25rem;  /* 4px */
-  --radius-sm: 0.5rem;   /* 8px */
-  --radius-md: 0.75rem;  /* 12px */
-  --radius-lg: 1rem;     /* 16px */
-  --radius-xl: 1.5rem;   /* 24px */
+  
+  --radius-xs: 0.25rem;  
+  --radius-sm: 0.5rem;   
+  --radius-md: 0.75rem;  
+  --radius-lg: 1rem;     
+  --radius-xl: 1.5rem;   
   --radius-full: 9999px;
 
-  /* ==========================================================================
-     TRANSICIONES Y ANIMACIONES
-     ========================================================================== */
+  
   --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* ==========================================================================
-     CONTENEDOR Y LAYOUT
-     ========================================================================== */
+  
   --container-max: 1200px;
   --container-padding: 1.5rem;
   --header-height: 72px;
 
-  /* Z-Index Hierarchy */
+  
   --z-base: 1;
   --z-sticky: 100;
   --z-header: 200;
@@ -130,9 +112,6 @@
   --z-toast: 2000;
 }
 
-/* ==========================================================================
-   PALETA DE COLORES - TEMA CLARO
-   ========================================================================== */
 [data-theme="light"] {
   --color-primary: #e11d48;
   --color-primary-hover: #be123c;
@@ -155,7 +134,7 @@
   --color-danger: #dc2626;
   --color-danger-subtle: rgba(220, 38, 38, 0.12);
 
-  /* Superficies y Fondos (Light) */
+  
   --color-bg: #f8fafc;
   --color-bg-alt: #f1f5f9;
   --color-surface: #ffffff;
@@ -164,18 +143,18 @@
   --color-border: rgba(15, 23, 42, 0.1);
   --color-border-hover: rgba(225, 29, 72, 0.4);
 
-  /* Tipografía y Textos (Light) */
+  
   --color-text: #0f172a;
   --color-text-muted: #475569;
   --color-text-dim: #94a3b8;
   --color-text-inverse: #ffffff;
 
-  /* Efectos de Cristal / Glassmorphism */
+  
   --glass-bg: rgba(255, 255, 255, 0.85);
   --glass-border: rgba(15, 23, 42, 0.08);
   --glass-blur: blur(14px);
 
-  /* Sombras (Light) */
+  
   --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
   --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08), 0 2px 4px rgba(15, 23, 42, 0.04);
   --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.12), 0 4px 8px rgba(15, 23, 42, 0.04);

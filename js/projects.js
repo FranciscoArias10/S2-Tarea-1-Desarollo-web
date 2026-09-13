@@ -1,9 +1,3 @@
-/**
- * PROJECTS CONTROLLER - FRANCISCO ARIAS PORTFOLIO
- * Proyectos Reales de Francisco Arias (GitHub @FranciscoArias10)
- * Filtrado interactivo por categoría y modal detallado de proyectos con accesibilidad
- */
-
 export const projectsData = [
   {
     id: 'librepdf',
@@ -94,18 +88,13 @@ export function initProjects() {
   const modalDialog = document.getElementById('modal-dialog');
   let lastFocusedElement = null;
 
-  // ==========================================================================
-  // FILTRADO DINÁMICO DE PROYECTOS
-  // ==========================================================================
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const filterValue = btn.getAttribute('data-filter');
 
-      // Actualizar botón activo
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
-      // Filtrar tarjetas
       projectItems.forEach(item => {
         const itemCategories = (item.getAttribute('data-category') || '').split(' ');
         if (filterValue === 'all' || itemCategories.includes(filterValue)) {
@@ -125,16 +114,12 @@ export function initProjects() {
     });
   });
 
-  // ==========================================================================
-  // MODAL DE DETALLES DE PROYECTO
-  // ==========================================================================
   const openModal = (projectId) => {
     const project = projectsData.find(p => p.id === projectId);
     if (!project || !modal) return;
 
     lastFocusedElement = document.activeElement;
 
-    // Rellenar contenido del modal
     document.getElementById('modal-img').src = project.image;
     document.getElementById('modal-img').alt = `Captura de pantalla de ${project.title}`;
     document.getElementById('modal-category-badge').textContent = project.categoryName;
@@ -142,7 +127,6 @@ export function initProjects() {
     document.getElementById('modal-problem').textContent = project.problem;
     document.getElementById('modal-description').textContent = project.fullDesc;
 
-    // Lista de características clave
     const featuresList = document.getElementById('modal-features');
     featuresList.innerHTML = '';
     project.features.forEach(feat => {
@@ -151,7 +135,6 @@ export function initProjects() {
       featuresList.appendChild(li);
     });
 
-    // Tecnologías
     const techContainer = document.getElementById('modal-tech-tags');
     techContainer.innerHTML = '';
     project.technologies.forEach(tech => {
@@ -161,18 +144,15 @@ export function initProjects() {
       techContainer.appendChild(span);
     });
 
-    // Enlaces
     const repoBtn = document.getElementById('modal-repo-link');
     const demoBtn = document.getElementById('modal-demo-link');
     repoBtn.href = project.github;
     demoBtn.href = project.demo;
 
-    // Mostrar modal
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 
-    // Focus en el botón de cerrar
     setTimeout(() => {
       if (modalCloseBtn) modalCloseBtn.focus();
     }, 100);
@@ -189,7 +169,6 @@ export function initProjects() {
     }
   };
 
-  // Botones "Ver detalles"
   const detailButtons = document.querySelectorAll('.btn-view-details');
   detailButtons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -198,11 +177,9 @@ export function initProjects() {
     });
   });
 
-  // Cerrar modal por clic en backdrop o botón X
   if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
   if (modalBackdrop) modalBackdrop.addEventListener('click', closeModal);
 
-  // Cerrar con Escape y atrapar el foco
   document.addEventListener('keydown', (e) => {
     if (!modal || !modal.classList.contains('active')) return;
 

@@ -1,9 +1,3 @@
-/**
- * FORM VALIDATION & FEEDBACK - FRANCISCO ARIAS PORTFOLIO
- * Validación en tiempo real, contador de caracteres y notificaciones Toast
- */
-
-// Función utilitaria para mostrar notificaciones Toast
 export function showToast(message, type = 'success') {
   const container = document.getElementById('toast-container');
   if (!container) return;
@@ -23,12 +17,10 @@ export function showToast(message, type = 'success') {
 
   container.appendChild(toast);
 
-  // Animación de entrada
   setTimeout(() => {
     toast.classList.add('show');
   }, 10);
 
-  // Animación de salida y remoción
   setTimeout(() => {
     toast.classList.remove('show');
     setTimeout(() => {
@@ -48,7 +40,6 @@ export function initContactForm() {
   const charCounter = document.getElementById('message-char-count');
   const submitBtn = document.getElementById('form-submit-btn');
 
-  // Contador de caracteres para el mensaje
   if (messageInput && charCounter) {
     messageInput.addEventListener('input', () => {
       const currentLength = messageInput.value.length;
@@ -61,7 +52,6 @@ export function initContactForm() {
     });
   }
 
-  // Validaciones individuales
   const validateName = () => {
     const val = nameInput.value.trim();
     const errorEl = document.getElementById('name-error');
@@ -147,7 +137,6 @@ export function initContactForm() {
     }
   };
 
-  // Eventos en vivo (blur & input)
   nameInput.addEventListener('blur', validateName);
   emailInput.addEventListener('blur', validateEmail);
   subjectInput.addEventListener('blur', validateSubject);
@@ -158,7 +147,6 @@ export function initContactForm() {
   subjectInput.addEventListener('input', () => { if (subjectInput.classList.contains('is-invalid')) validateSubject(); });
   messageInput.addEventListener('input', () => { if (messageInput.classList.contains('is-invalid')) validateMessage(); });
 
-  // Envío del formulario
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -169,7 +157,6 @@ export function initContactForm() {
 
     if (!isNameValid || !isEmailValid || !isSubjectValid || !isMessageValid) {
       showToast('Por favor, revisa y corrige los campos señalados.', 'warning');
-      // Enfocar el primer elemento inválido
       if (!isNameValid) nameInput.focus();
       else if (!isEmailValid) emailInput.focus();
       else if (!isSubjectValid) subjectInput.focus();
@@ -177,7 +164,6 @@ export function initContactForm() {
       return;
     }
 
-    // Simulación de envío
     const originalBtnText = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.innerHTML = `
@@ -192,8 +178,7 @@ export function initContactForm() {
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalBtnText;
       form.reset();
-      
-      // Limpiar clases de validación
+
       [nameInput, emailInput, subjectInput, messageInput].forEach(input => {
         input.classList.remove('is-valid');
       });

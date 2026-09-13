@@ -1,9 +1,3 @@
-/**
- * DESIGN SYSTEM CONTROLLER - FRANCISCO ARIAS PORTFOLIO
- * Funcionalidades interactivas para documentar el Design System,
- * como copiado ágil de variables y códigos hexadecimales al portapapeles.
- */
-
 import { showToast } from './form-validation.js';
 
 export function initDesignSystem() {
@@ -20,7 +14,6 @@ export function initDesignSystem() {
         await navigator.clipboard.writeText(colorValue);
         showToast(`Copiado: ${tokenName} (${colorValue})`, 'info');
       } catch (err) {
-        // Fallback si clipboard API no está disponible
         const tempInput = document.createElement('input');
         tempInput.value = colorValue;
         document.body.appendChild(tempInput);

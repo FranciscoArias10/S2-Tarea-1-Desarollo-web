@@ -132,15 +132,6 @@ A continuación se presentan las capturas reales de los proyectos desarrollados 
 
 ---
 
-### 5. Fotografía Profesional
-> Avatar oficial de Francisco Arias integrado en el Hero y en el Header del portafolio.
-
-<p align="center">
-  <img src="./assets/img/profile.jpg" alt="Fotografía oficial de Francisco Arias" width="220" style="border-radius: 50%;">
-</p>
-
----
-
 ## 🖥️ 4. Instrucciones de Visualización
 
 ### 4.1 Visualización Pública en GitHub Pages (Recomendado)

@@ -76,6 +76,26 @@ export const projectsData = [
     image: 'assets/img/project-acuaia.jpg',
     github: 'https://github.com/FranciscoArias10/acuaIA',
     demo: 'https://acua-ia.vercel.app'
+  },
+  {
+    id: 'searchpineapple',
+    title: 'SearchPineapple - Buscador y Comparador de Precios Tech',
+    category: 'fullstack',
+    categoryName: 'Web & Comparador',
+    problem: 'Precios dispersos y desactualizados en locales de tecnología',
+    shortDesc: 'Sitio web interactivo para encontrar y comparar los mejores precios en locales de tecnología y artefactos electrónicos en Ecuador, con información actualizada sin costo.',
+    fullDesc: 'SearchPineapple es un portal web desarrollado para facilitar a los consumidores la búsqueda y comparación de precios en tecnología, computadoras, celulares, suministros y soporte técnico en Ecuador (CompuCentro, Computron, Novicompu, etc.). Centraliza catálogos comerciales, ubicaciones de locales físicos y disponibilidad para ayudar al usuario a tomar decisiones de compra informadas y económicas.',
+    features: [
+      'Buscador y comparador de precios de locales tecnológicos en tiempo real.',
+      'Mapeo de locales físicos y cadenas de tecnología asociadas.',
+      'Catálogo clasificado por categorías de artefactos, laptops y accesorios.',
+      'Diseño web alegre, responsivo y adaptado a dispositivos móviles y desktop.',
+      'Despliegue ágil en producción mediante Netlify con alta disponibilidad.'
+    ],
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Netlify'],
+    image: 'assets/img/project-searchpineapple.png',
+    github: 'https://github.com/FranciscoArias10',
+    demo: 'https://6508ea205d971a6e18e26809--mellow-treacle-e9c680.netlify.app/#adadcard'
   }
 ];
 

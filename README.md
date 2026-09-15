@@ -132,6 +132,19 @@ A continuación se presentan las capturas reales de los proyectos desarrollados 
 
 ---
 
+### 5. SearchPineapple — Buscador y Comparador de Precios Tech
+> Portal web interactivo para encontrar y comparar los mejores precios en locales de tecnología y artefactos electrónicos en Ecuador (CompuCentro, Computron, etc.), con información actualizada sin costo.
+
+![Captura de SearchPineapple](./assets/img/project-searchpineapple.png)
+
+* **Problema que resuelve**: Precios dispersos y desactualizados en locales de tecnología física, facilitando la toma de decisiones informadas y económicas.
+* **Tecnologías**: HTML5, CSS3, JavaScript, Responsive Design, Netlify.
+* **Repositorio**: [GitHub - FranciscoArias10](https://github.com/FranciscoArias10)
+* **Demo en Vivo**: [mellow-treacle-e9c680.netlify.app](https://6508ea205d971a6e18e26809--mellow-treacle-e9c680.netlify.app/#adadcard)
+* **Categoría**: Web & Comparador
+
+---
+
 ## 🖥️ 4. Instrucciones de Visualización
 
 ### 4.1 Visualización Pública en GitHub Pages (Recomendado)
@@ -211,7 +224,8 @@ S2-Tarea#1-Desarollo-web/
         ├── project-librepdf.jpg # Captura del proyecto móvil LibrePDF
         ├── project-librefree.jpg# Captura del proyecto móvil LibreFree
         ├── project-sesplatform.jpg # Captura del portal web SES-Platform
-        └── project-acuaia.jpg   # Captura de la plataforma acuaIA
+        ├── project-acuaia.jpg   # Captura de la plataforma acuaIA
+        └── project-searchpineapple.png # Captura del comparador SearchPineapple
 ```
 
 ---

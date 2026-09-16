@@ -119,16 +119,16 @@ A continuación se presentan las capturas reales de los proyectos desarrollados 
 
 ---
 
-### 4. acuaIA — Inteligencia Artificial Acuícola
-> Plataforma web inteligente para el sector camaronero y acuícola que procesa telemetría de piscinas (oxígeno disuelto, pH, temperatura) y predice biomasa mediante modelos de IA.
+### 4. AquaScan AI (acuaIA) — Diagnóstico Patológico con Visión Artificial
+> Plataforma inteligente para el sector acuícola que diagnostica patologías en camarón de cultivo (*Penaeus vannamei*) mediante redes neuronales convolucionales profundas (CNN) analizando imágenes estáticas o cámara en tiempo real.
 
-![Captura de acuaIA](./assets/img/project-acuaia.jpg)
+![Captura de AquaScan AI](./assets/img/project-acuaia.jpg)
 
-* **Problema que resuelve**: Monitoreo manual ineficiente de la calidad del agua y predicción tardía de biomasa que incrementa la mortalidad en cultivos.
-* **Tecnologías**: JavaScript, Machine Learning, Data Visualization, CSS Custom Properties, Vercel.
+* **Problema que resuelve**: Diagnóstico tardío y manual de infecciones patológicas en camarón de cultivo, mitigando pérdidas masivas en piscinas acuícolas.
+* **Tecnologías**: Deep Learning, CNN Models, Computer Vision, JavaScript / Web, PyTorch / ONNX, Vercel.
 * **Repositorio**: [GitHub - acuaIA](https://github.com/FranciscoArias10/acuaIA)
 * **Demo en Vivo**: [acua-ia.vercel.app](https://acua-ia.vercel.app)
-* **Categoría**: AI & Web Platform
+* **Categoría**: AI & Computer Vision
 
 ---
 

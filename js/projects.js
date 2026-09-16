@@ -60,19 +60,19 @@ export const projectsData = [
   },
   {
     id: 'acuaia',
-    title: 'acuaIA - Inteligencia Artificial Acuícola',
+    title: 'AquaScan AI (acuaIA) - Diagnóstico Patológico con Redes Neuronales',
     category: 'ai fullstack',
-    categoryName: 'IA & Web Platform',
-    problem: 'Monitoreo manual ineficiente de calidad de agua y predicción tardía de biomasa',
-    shortDesc: 'Plataforma web inteligente para el sector acuícola que analiza telemetría de piscinas camaroneras, oxígeno disuelto, pH y realiza predicciones de biomasa con IA.',
-    fullDesc: 'acuaIA es un sistema tecnológico desplegado en Vercel que aplica modelos de inteligencia artificial para la optimización de granjas camaroneras y acuícolas. Integra telemetría de sensores de oxígeno disuelto, temperatura y pH, correlacionando datos históricos para predecir el crecimiento de biomasa, la tasa de supervivencia y recomendar ventanas óptimas de cosecha.',
+    categoryName: 'IA & Visión Artificial',
+    problem: 'Diagnóstico tardío de patologías e infecciones en camarón de cultivo (Penaeus vannamei)',
+    shortDesc: 'Plataforma inteligente de diagnóstico patológico para camarón de cultivo mediante análisis de imágenes estáticas o cámara en tiempo real con redes neuronales convolucionales profundas.',
+    fullDesc: 'AquaScan AI (acuaIA) es una plataforma inteligente orientada al sector acuícola que permite diagnosticar patologías en camarón de cultivo (*Penaeus vannamei*). Emplea redes neuronales convolucionales (CNN) profundas y modelos de visión por computador para clasificar muestras patológicas en tiempo real a través de cámaras o imágenes estáticas, entregando métricas de certeza diagnóstica y mitigando pérdidas operativas.',
     features: [
-      'Monitoreo en tiempo real de telemetría de agua (oxígeno disuelto, temperatura y pH).',
-      'Predicción algorítmica de biomasa semanal y eficiencia de factor de conversión alimenticia (FCR).',
-      'Mapeo geoespacial de piscinas acuícolas con alertas críticas tempranas.',
-      'Interfaz web moderna de alta fidelidad estética con visualizaciones dinámicas.'
+      'Diagnóstico patológico automatizado mediante redes neuronales convolucionales (CNN).',
+      'Modos de adquisición versátiles: captura fotográfica, análisis estático o inferencia por video en tiempo real.',
+      'Soporte para múltiples arquitecturas de modelos CNN y selección dinámica de pesos.',
+      'Interfaz web moderna con visualización inmediata de resultados y nivel de confianza diagnóstica.'
     ],
-    technologies: ['JavaScript', 'Machine Learning', 'Data Visualization', 'CSS Custom Props', 'Vercel'],
+    technologies: ['Deep Learning', 'CNN Models', 'Computer Vision', 'JavaScript / Web', 'PyTorch / ONNX'],
     image: 'assets/img/project-acuaia.jpg',
     github: 'https://github.com/FranciscoArias10/acuaIA',
     demo: 'https://acua-ia.vercel.app'

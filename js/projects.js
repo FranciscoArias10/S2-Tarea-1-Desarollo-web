@@ -145,10 +145,10 @@ export function initProjects() {
           }, 50);
         } else {
           item.style.opacity = '0';
-          item.style.transform = 'translateY(15px)';
+          item.style.transform = 'translateY(20px)';
           setTimeout(() => {
             item.classList.add('hidden');
-          }, 250);
+          }, 300);
         }
       });
     });
@@ -198,7 +198,6 @@ export function initProjects() {
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
-    document.documentElement.style.overflow = 'hidden';
 
     setTimeout(() => {
       if (modalCloseBtn) modalCloseBtn.focus();
@@ -210,7 +209,6 @@ export function initProjects() {
     modal.classList.remove('active');
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
-    document.documentElement.style.overflow = '';
 
     if (lastFocusedElement) {
       lastFocusedElement.focus();

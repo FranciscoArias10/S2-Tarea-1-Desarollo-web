@@ -478,27 +478,17 @@
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-lg);
   overflow-y: auto;
-  scrollbar-width: none !important; /* Firefox */
-  -ms-overflow-style: none !important; /* IE y Edge */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
   z-index: 2;
   transform: scale(0.95) translateY(20px);
   transition: transform var(--transition-normal);
 }
 
 .modal-dialog::-webkit-scrollbar {
-  width: 0 !important;
-  height: 0 !important;
-  display: none !important; /* Chrome, Safari, Opera */
-  background: transparent !important;
-}
-
-.modal-dialog::-webkit-scrollbar-track,
-.modal-dialog::-webkit-scrollbar-thumb,
-.modal-dialog::-webkit-scrollbar-corner {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-  background: transparent !important;
+  display: none; /* Chrome, Safari, Opera */
+  width: 0;
+  height: 0;
 }
 
 .modal.active .modal-dialog {
@@ -640,6 +630,22 @@
 
 .toast.toast-info .toast-icon {
   color: var(--color-primary);
+}
+
+.toast.toast-error {
+  border-left: 4px solid var(--color-danger);
+}
+
+.toast.toast-error .toast-icon {
+  color: var(--color-danger);
+}
+
+.toast.toast-warning {
+  border-left: 4px solid var(--color-accent);
+}
+
+.toast.toast-warning .toast-icon {
+  color: var(--color-accent);
 }
 
 .back-to-top {

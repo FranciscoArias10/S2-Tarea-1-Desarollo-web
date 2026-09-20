@@ -147,7 +147,7 @@ export function initContactForm() {
   subjectInput.addEventListener('input', () => { if (subjectInput.classList.contains('is-invalid')) validateSubject(); });
   messageInput.addEventListener('input', () => { if (messageInput.classList.contains('is-invalid')) validateMessage(); });
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const isNameValid = validateName();
@@ -174,17 +174,49 @@ export function initContactForm() {
       Enviando mensaje...
     `;
 
-    setTimeout(() => {
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/franciscoarias108@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          Nombre: nameInput.value.trim(),
+          Email: emailInput.value.trim(),
+          Asunto: subjectInput.value.trim(),
+          Mensaje: messageInput.value.trim(),
+          _subject: `Nuevo mensaje de Portafolio: ${subjectInput.value.trim()}`,
+          _template: 'table',
+          _captcha: 'false'
+        })
+      });
+
+      const data = await response.json();
+
+      if (response.ok && (data.success === 'true' || data.success === true)) {
+        form.reset();
+        [nameInput, emailInput, subjectInput, messageInput].forEach(input => {
+          input.classList.remove('is-valid');
+        });
+        if (charCounter) charCounter.textContent = '0 / 500';
+        showToast('¡Mensaje enviado con éxito! Francisco se comunicará contigo pronto.', 'success');
+      } else if (data.message && (data.message.includes('Activate Form') || data.message.includes('Activation'))) {
+        form.reset();
+        [nameInput, emailInput, subjectInput, messageInput].forEach(input => {
+          input.classList.remove('is-valid');
+        });
+        if (charCounter) charCounter.textContent = '0 / 500';
+        showToast('¡Casi listo! Revisa tu bandeja de franciscoarias108@gmail.com y pulsa "Activate Form".', 'warning');
+      } else {
+        throw new Error(data.message || 'Error en el servicio de envío');
+      }
+    } catch (error) {
+      console.error('Error enviando formulario:', error);
+      showToast('Hubo un inconveniente al enviar el mensaje. Por favor intenta de nuevo o escribe a franciscoarias108@gmail.com', 'error');
+    } finally {
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalBtnText;
-      form.reset();
-
-      [nameInput, emailInput, subjectInput, messageInput].forEach(input => {
-        input.classList.remove('is-valid');
-      });
-      if (charCounter) charCounter.textContent = '0 / 500';
-
-      showToast('¡Mensaje enviado con éxito! Francisco se comunicará contigo pronto.', 'success');
-    }, 900);
+    }
   });
 }

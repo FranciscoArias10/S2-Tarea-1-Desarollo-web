@@ -17,11 +17,11 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/variables.css?v=5">
-  <link rel="stylesheet" href="./css/base.css?v=5">
-  <link rel="stylesheet" href="./css/components.css?v=5">
-  <link rel="stylesheet" href="./css/sections.css?v=5">
-  <link rel="stylesheet" href="./css/responsive.css?v=5">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/sections.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -1357,8 +1357,10 @@
                 </svg>
               </div>
               <div class="contact-card-details">
-                <span class="contact-card-label">Correo Institucional / Profesional</span>
-                <a href="mailto:fariasp2@unemi.edu.ec" class="contact-card-value">fariasp2@unemi.edu.ec</a>
+                <span class="contact-card-label">Correo Electrónico Directo</span>
+                <a href="mailto:franciscoarias108@gmail.com" class="contact-card-value">franciscoarias108@gmail.com</a>
+                <span class="contact-card-label" style="margin-top: 0.35rem;">Institucional (UNEMI)</span>
+                <a href="mailto:fariasp2@unemi.edu.ec" class="contact-card-value" style="font-size: var(--text-xs); opacity: 0.85;">fariasp2@unemi.edu.ec</a>
               </div>
             </article>
 
@@ -1403,14 +1405,17 @@
                 </svg>
               </div>
               <div class="contact-card-details">
-                <span class="contact-card-label">Ubicación</span>
-                <span class="contact-card-value">Milagro, Guayas, Ecuador</span>
+                <span class="contact-card-label">Ubicación y Disponibilidad</span>
+                <span class="contact-card-value">Milagro, Guayas, Ecuador • Remoto</span>
               </div>
             </article>
           </div>
 
           <div class="contact-form-card">
-            <form id="contact-form" novalidate aria-label="Formulario de contacto profesional">
+            <form id="contact-form" action="https://formsubmit.co/franciscoarias108@gmail.com" method="POST" novalidate aria-label="Formulario de contacto profesional">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_subject" value="Nuevo mensaje desde Portafolio Web">
               <div class="form-group">
                 <label for="contact-name" class="form-label">
                   Nombre Completo <span class="required" aria-hidden="true">*</span>
@@ -1562,7 +1567,7 @@
 
   <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
-  <script type="module" src="./js/main.js?v=5"></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

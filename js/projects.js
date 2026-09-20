@@ -198,6 +198,7 @@ export function initProjects() {
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
 
     setTimeout(() => {
       if (modalCloseBtn) modalCloseBtn.focus();
@@ -209,6 +210,7 @@ export function initProjects() {
     modal.classList.remove('active');
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
 
     if (lastFocusedElement) {
       lastFocusedElement.focus();

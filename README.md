@@ -38,7 +38,7 @@ El objetivo central de este proyecto es comunicar de manera clara, estructurada 
 
 ### Estructura de las 6 Secciones Obligatorias:
 1. **Inicio / Presentación (`#hero`)**:
-   - Saludo interactivo con badge de disponibilidad para pasantías y proyectos de desarrollo.
+   - Saludo interactivo con badge de disponibilidad para proyectos de desarrollo.
    - Encabezado `<h1>` principal con gradiente de texto moderno.
    - Fotografía profesional con animación orgánica (Blob morphing) y badges flotantes.
    - Botones de acción directa (*Call To Action*) y chips de tecnologías principales.
@@ -139,8 +139,8 @@ A continuación se presentan las capturas reales de los proyectos desarrollados 
 
 * **Problema que resuelve**: Precios dispersos y desactualizados en locales de tecnología física, facilitando la toma de decisiones informadas y económicas.
 * **Tecnologías**: HTML5, CSS3, JavaScript, Responsive Design, Netlify.
-* **Repositorio**: [GitHub - FranciscoArias10](https://github.com/FranciscoArias10)
-* **Demo en Vivo**: [mellow-treacle-e9c680.netlify.app](https://6508ea205d971a6e18e26809--mellow-treacle-e9c680.netlify.app/#adadcard)
+* **Repositorio**: [GitHub - SearchPineapple](https://github.com/FranciscoArias10/SearchPineapple)
+* **Demo en Vivo**: [mellow-treacle-e9c680.netlify.app](https://6508ea205d971a6e18e26809--mellow-treacle-e9c680.netlify.app/)
 * **Categoría**: Web & Comparador
 
 ---

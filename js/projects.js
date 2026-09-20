@@ -94,8 +94,8 @@ export const projectsData = [
     ],
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Netlify'],
     image: 'assets/img/project-searchpineapple.png',
-    github: 'https://github.com/FranciscoArias10',
-    demo: 'https://6508ea205d971a6e18e26809--mellow-treacle-e9c680.netlify.app/#adadcard'
+    github: 'https://github.com/FranciscoArias10/SearchPineapple',
+    demo: 'https://6508ea205d971a6e18e26809--mellow-treacle-e9c680.netlify.app/'
   }
 ];
 
@@ -140,8 +140,14 @@ export function initProjects() {
 
     lastFocusedElement = document.activeElement;
 
-    document.getElementById('modal-img').src = project.image;
-    document.getElementById('modal-img').alt = `Captura de pantalla de ${project.title}`;
+    const modalImg = document.getElementById('modal-img');
+    modalImg.src = project.image;
+    modalImg.alt = `Captura de pantalla de ${project.title}`;
+    if (project.category.includes('mobile')) {
+      modalImg.classList.add('modal-img-mobile');
+    } else {
+      modalImg.classList.remove('modal-img-mobile');
+    }
     document.getElementById('modal-category-badge').textContent = project.categoryName;
     document.getElementById('modal-title').textContent = project.title;
     document.getElementById('modal-problem').textContent = project.problem;

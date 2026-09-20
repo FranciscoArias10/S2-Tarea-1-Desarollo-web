@@ -202,6 +202,10 @@
   transition: transform var(--transition-slow);
 }
 
+.project-item[data-category*="mobile"] .project-card figure img {
+  object-position: center top;
+}
+
 .project-card:hover figure img {
   transform: scale(1.05);
 }
@@ -474,9 +478,15 @@
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-lg);
   overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
   z-index: 2;
   transform: scale(0.95) translateY(20px);
   transition: transform var(--transition-normal);
+}
+
+.modal-dialog::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .modal.active .modal-dialog {
@@ -511,7 +521,13 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  border-top-left-radius: calc(var(--radius-xl) - 1px);
+  border-top-right-radius: calc(var(--radius-xl) - 1px);
   border-bottom: 1px solid var(--color-border);
+}
+
+.modal-content-img.modal-img-mobile {
+  object-position: center top;
 }
 
 .modal-body {

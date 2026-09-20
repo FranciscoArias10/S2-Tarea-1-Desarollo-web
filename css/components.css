@@ -202,7 +202,7 @@
   transition: transform var(--transition-slow);
 }
 
-.project-item[data-category*="mobile"] .project-card figure img {
+.project-item[data-category="mobile"] .project-card figure img {
   object-position: center top;
 }
 

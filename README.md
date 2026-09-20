@@ -145,6 +145,19 @@ A continuación se presentan las capturas reales de los proyectos desarrollados 
 
 ---
 
+### 6. CopyEasy — Transferencia Ultrarrápida de Archivos (Web & Móvil)
+> Aplicación multiplataforma (Web y Android APK) que permite compartir archivos, fotos, enlaces y notas de texto al instante entre dispositivos sin necesidad de registro, cables ni configuraciones de red, utilizando salas efímeras con código numérico único, código QR y Supabase Realtime.
+
+![Captura de CopyEasy](./assets/img/project-copyeasy.png)
+
+* **Problema que resuelve**: Fricción y lentitud al transferir información y archivos pesados entre diferentes sistemas operativos (PC, móvil, tablet) sin depender de correos electrónicos, cables USB ni plataformas de mensajería que comprimen la calidad.
+* **Tecnologías**: React Native, Expo Router, Expo Go, TypeScript, Supabase Realtime, Netlify, Android APK (EAS Build).
+* **Repositorio**: [GitHub - CopyEasy](https://github.com/FranciscoArias10/CopyEasy-)
+* **Demo en Vivo**: [copyeasy.netlify.app](https://copyeasy.netlify.app/)
+* **Categoría**: Mobile & Full Stack Web
+
+---
+
 ## 🖥️ 4. Instrucciones de Visualización
 
 ### 4.1 Visualización Pública en GitHub Pages (Recomendado)
@@ -225,7 +238,8 @@ S2-Tarea#1-Desarollo-web/
         ├── project-librefree.jpg# Captura del proyecto móvil LibreFree
         ├── project-sesplatform.jpg # Captura del portal web SES-Platform
         ├── project-acuaia.jpg   # Captura de la plataforma acuaIA
-        └── project-searchpineapple.png # Captura del comparador SearchPineapple
+        ├── project-searchpineapple.png # Captura del comparador SearchPineapple
+        └── project-copyeasy.png # Captura de la plataforma CopyEasy
 ```
 
 ---

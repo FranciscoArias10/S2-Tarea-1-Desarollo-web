@@ -96,6 +96,26 @@ export const projectsData = [
     image: 'assets/img/project-searchpineapple.png',
     github: 'https://github.com/FranciscoArias10/SearchPineapple',
     demo: 'https://6508ea205d971a6e18e26809--mellow-treacle-e9c680.netlify.app/'
+  },
+  {
+    id: 'copyeasy',
+    title: 'CopyEasy - Transferencia Ultrarrápida de Archivos P2P',
+    category: 'mobile fullstack',
+    categoryName: 'Web & Mobile App',
+    problem: 'Falta de métodos rápidos y sin registro para transferir archivos entre PC y móvil',
+    shortDesc: 'Solución multiplataforma (Web y Android) para compartir archivos, fotos, textos y enlaces al instante entre dispositivos mediante salas temporales con códigos QR y Supabase Realtime.',
+    fullDesc: 'CopyEasy es una aplicación multiplataforma desarrollada con React Native, Expo Router y Supabase Realtime que permite transferir archivos, imágenes con previsualización, documentos y fragmentos de texto entre computadoras, tablets y teléfonos sin necesidad de cables ni registros. Cuenta con salas temporales seguras generadas con código único y QR, auto-destrucción por inactividad o desconexión del último usuario, despliegue web en producción en Netlify y distribución de APK para Android.',
+    features: [
+      'Transferencia instantánea sin registro mediante salas temporales y códigos QR.',
+      'Sincronización en tiempo real basada en Supabase Realtime (Presence & Broadcast).',
+      'Soporte completo para imágenes, documentos (hasta 5MB), notas de texto y enlaces.',
+      'Privacidad garantizada con auto-destrucción de salas por inactividad o desconexión.',
+      'Despliegue web en Netlify y distribución móvil mediante APK para Android (EAS Build).'
+    ],
+    technologies: ['React Native', 'Expo Router', 'Expo Go', 'Supabase Realtime', 'TypeScript', 'Netlify', 'EAS Build'],
+    image: 'assets/img/project-copyeasy.png',
+    github: 'https://github.com/FranciscoArias10/CopyEasy-',
+    demo: 'https://copyeasy.netlify.app/'
   }
 ];
 
@@ -143,7 +163,7 @@ export function initProjects() {
     const modalImg = document.getElementById('modal-img');
     modalImg.src = project.image;
     modalImg.alt = `Captura de pantalla de ${project.title}`;
-    if (project.category.includes('mobile')) {
+    if (project.id === 'librepdf' || project.id === 'librefree') {
       modalImg.classList.add('modal-img-mobile');
     } else {
       modalImg.classList.remove('modal-img-mobile');

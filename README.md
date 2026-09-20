@@ -154,7 +154,7 @@ A continuación se presentan las capturas reales de los proyectos desarrollados 
 * **Tecnologías**: React Native, Expo Router, Expo Go, TypeScript, Supabase Realtime, Netlify, Android APK (EAS Build).
 * **Repositorio**: [GitHub - CopyEasy](https://github.com/FranciscoArias10/CopyEasy-)
 * **Demo en Vivo**: [copyeasy.netlify.app](https://copyeasy.netlify.app/)
-* **Categoría**: Mobile & Full Stack Web
+* **Categoría**: Full Stack Web
 
 ---
 

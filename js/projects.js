@@ -100,8 +100,8 @@ export const projectsData = [
   {
     id: 'copyeasy',
     title: 'CopyEasy - Transferencia Ultrarrápida de Archivos P2P',
-    category: 'mobile fullstack',
-    categoryName: 'Web & Mobile App',
+    category: 'fullstack',
+    categoryName: 'Web & Plataforma',
     problem: 'Falta de métodos rápidos y sin registro para transferir archivos entre PC y móvil',
     shortDesc: 'Solución multiplataforma (Web y Android) para compartir archivos, fotos, textos y enlaces al instante entre dispositivos mediante salas temporales con códigos QR y Supabase Realtime.',
     fullDesc: 'CopyEasy es una aplicación multiplataforma desarrollada con React Native, Expo Router y Supabase Realtime que permite transferir archivos, imágenes con previsualización, documentos y fragmentos de texto entre computadoras, tablets y teléfonos sin necesidad de cables ni registros. Cuenta con salas temporales seguras generadas con código único y QR, auto-destrucción por inactividad o desconexión del último usuario, despliegue web en producción en Netlify y distribución de APK para Android.',

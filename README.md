@@ -83,24 +83,24 @@ El proyecto fue desarrollado exclusivamente con tecnologías web estándares sin
 A continuación se presentan las capturas reales de los proyectos desarrollados por el estudiante y los recursos visuales integrados en el portafolio:
 
 ### 1. LibrePDF — Conversor & Escáner Móvil a PDF
-> Alternativa libre, rápida y gratuita a CamScanner desarrollada con React Native, TypeScript y Expo SDK 57 para digitalizar fotos a PDF con filtros de realce y reordenamiento de páginas.
+> Alternativa libre, rápida y gratuita a CamScanner desarrollada con React Native, Expo Go, TypeScript y Expo SDK 57 para digitalizar fotos a PDF con filtros de realce y reordenamiento de páginas.
 
 ![Captura de LibrePDF](./assets/img/project-librepdf.jpg)
 
 * **Problema que resuelve**: Elimina la dependencia de aplicaciones comerciales invasivas que imponen marcas de agua, anuncios y suscripciones de pago.
-* **Tecnologías**: React Native, TypeScript, Expo SDK 57, Image Manipulator, Print & FileSystem.
+* **Tecnologías**: React Native, Expo Go, TypeScript, Expo SDK 57, Image Manipulator, Print & FileSystem.
 * **Repositorio**: [GitHub - LibrePDF](https://github.com/FranciscoArias10/LibrePDF)
 * **Categoría**: Mobile Application
 
 ---
 
 ### 2. LibreFree — Lector de Libros & Audiolibros
-> Lector móvil moderno para formatos EPUB y PDF con síntesis de voz en tiempo real (Text-to-Speech), almacenamiento local seguro SQLite y modo oscuro OLED.
+> Lector móvil moderno para formatos EPUB y PDF desarrollado con React Native y Expo Go, con síntesis de voz en tiempo real (Text-to-Speech), almacenamiento local seguro SQLite y modo oscuro OLED.
 
 ![Captura de LibreFree](./assets/img/project-librefree.jpg)
 
 * **Problema que resuelve**: Falta de lectores de libros sin costo con función de audiolibro offline que protejan la privacidad del usuario sin requerir inicio de sesión.
-* **Tecnologías**: React Native, TypeScript, Expo Speech & Audio, SQLite WAL, ePub.js.
+* **Tecnologías**: React Native, Expo Go, TypeScript, Expo Speech & Audio, SQLite WAL, ePub.js.
 * **Repositorio**: [GitHub - LibreFree](https://github.com/FranciscoArias10/librefree-React)
 * **Categoría**: Mobile & Audio Application
 

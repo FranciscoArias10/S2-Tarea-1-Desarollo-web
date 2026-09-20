@@ -5,8 +5,8 @@ export const projectsData = [
     category: 'mobile',
     categoryName: 'Mobile App',
     problem: 'Apps comerciales imponen marcas de agua, suscripciones y anuncios',
-    shortDesc: 'Aplicación móvil libre, rápida y 100% gratuita para digitalizar fotos y convertirlas a PDF con filtros tipo CamScanner, reordenamiento de páginas y exportación.',
-    fullDesc: 'LibrePDF surge como una alternativa de código abierto y sin publicidad a herramientas comerciales de digitalización. Desarrollada con React Native y Expo SDK, permite a los usuarios capturar documentos desde la cámara o galería, aplicar filtros avanzados de realce, rotar y reordenar páginas dinámicamente, y configurar márgenes y formatos de hoja (A4, Carta, Oficio) para compartir al instante.',
+    shortDesc: 'Aplicación móvil libre, rápida y 100% gratuita desarrollada con React Native y Expo Go para digitalizar fotos y convertirlas a PDF con filtros tipo CamScanner, reordenamiento de páginas y exportación.',
+    fullDesc: 'LibrePDF surge como una alternativa de código abierto y sin publicidad a herramientas comerciales de digitalización. Desarrollada con React Native, Expo Go y Expo SDK, permite a los usuarios capturar documentos desde la cámara o galería, aplicar filtros avanzados de realce, rotar y reordenar páginas dinámicamente, y configurar márgenes y formatos de hoja (A4, Carta, Oficio) para compartir al instante.',
     features: [
       'Captura mediante cámara y selección múltiple masiva desde la galería.',
       'Filtros de realce profesionales: Magic Color, Alto Contraste B/N y Escala de Grises.',
@@ -14,7 +14,7 @@ export const projectsData = [
       'Configuración avanzada de formatos (A4, Carta, Oficio), orientación y márgenes.',
       'Exportación y compartición directa vía WhatsApp, correo y Google Drive sin marcas de agua.'
     ],
-    technologies: ['React Native', 'TypeScript', 'Expo SDK 57', 'Image Manipulator', 'Print & FileSystem'],
+    technologies: ['React Native', 'Expo Go', 'TypeScript', 'Expo SDK 57', 'Image Manipulator', 'Print & FileSystem'],
     image: 'assets/img/project-librepdf.jpg',
     github: 'https://github.com/FranciscoArias10/LibrePDF',
     demo: 'https://github.com/FranciscoArias10/LibrePDF'
@@ -25,8 +25,8 @@ export const projectsData = [
     category: 'mobile',
     categoryName: 'Mobile & Audio',
     problem: 'Falta de lectores de libros offline con síntesis de voz gratuita y privacidad',
-    shortDesc: 'Lector de libros electrónicos (EPUB y PDF) con motor de lectura Ultra-HD, síntesis de voz en tiempo real (Text-to-Speech), almacenamiento local SQLite y modo oscuro OLED.',
-    fullDesc: 'LibreFree es una aplicación móvil moderna, libre y privada diseñada para la lectura y el aprendizaje continuo. Incorpora un lector adaptativo para formatos EPUB y PDF junto con un sintetizador de voz (TTS) integrado que transforma cualquier libro en audiolibro con control de velocidad. Toda la información de lectura, historial y marcadores se almacena 100% offline mediante SQLite, sin recopilar datos ni requerir cuentas.',
+    shortDesc: 'Lector de libros electrónicos (EPUB y PDF) desarrollado con React Native y Expo Go, con motor de lectura Ultra-HD, síntesis de voz en tiempo real (Text-to-Speech), almacenamiento local SQLite y modo oscuro OLED.',
+    fullDesc: 'LibreFree es una aplicación móvil moderna, libre y privada diseñada para la lectura y el aprendizaje continuo, desarrollada con React Native y Expo Go. Incorpora un lector adaptativo para formatos EPUB y PDF junto con un sintetizador de voz (TTS) integrado que transforma cualquier libro en audiolibro con control de velocidad. Toda la información de lectura, historial y marcadores se almacena 100% offline mediante SQLite, sin recopilar datos ni requerir cuentas.',
     features: [
       'Motor de lectura ultra nítido para archivos EPUB y PDF con escalado Retina.',
       'Síntesis de voz Text-to-Speech (TTS) con selector de velocidades (0.75x a 2.0x).',
@@ -34,7 +34,7 @@ export const projectsData = [
       'Base de datos interna SQLite para almacenamiento seguro y sin conexión a internet.',
       'Diseño moderno con barra flotante cápsula y navegación táctil optimizada.'
     ],
-    technologies: ['React Native', 'TypeScript', 'Expo Speech & Audio', 'SQLite WAL', 'ePub.js / PDF.js'],
+    technologies: ['React Native', 'Expo Go', 'TypeScript', 'Expo Speech & Audio', 'SQLite WAL', 'ePub.js / PDF.js'],
     image: 'assets/img/project-librefree.jpg',
     github: 'https://github.com/FranciscoArias10/librefree-React',
     demo: 'https://github.com/FranciscoArias10/librefree-React'

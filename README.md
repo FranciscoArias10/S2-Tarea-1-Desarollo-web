@@ -114,7 +114,7 @@ A continuación se presentan las capturas reales de los proyectos desarrollados 
 * **Problema que resuelve**: Descentralización y fragmentación de información académica entre docentes, administradores y estudiantes.
 * **Tecnologías**: TypeScript, React, CSS Custom Properties, REST APIs, Vercel.
 * **Repositorio**: [GitHub - SES-Platform](https://github.com/FranciscoArias10/SES-Platform)
-* **Demo en Vivo**: [ses-platform-two.vercel.app](https://ses-platform-two.vercel.app)
+* **Demo en Vivo**: [ses-platform-ten.vercel.app](https://ses-platform-ten.vercel.app/)
 * **Categoría**: Full Stack Web
 
 ---

@@ -56,7 +56,7 @@ export const projectsData = [
     technologies: ['TypeScript', 'React', 'CSS Custom Props', 'REST APIs', 'Vercel'],
     image: 'assets/img/project-sesplatform.jpg',
     github: 'https://github.com/FranciscoArias10/SES-Platform',
-    demo: 'https://ses-platform-two.vercel.app'
+    demo: 'https://ses-platform-ten.vercel.app/'
   },
   {
     id: 'acuaia',

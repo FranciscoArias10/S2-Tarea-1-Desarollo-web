@@ -198,6 +198,18 @@
   font-weight: var(--font-weight-extrabold);
 }
 
+.hero-title .highlight-matrix,
+.highlight-matrix {
+  color: var(--color-secondary);
+  text-shadow: 0 0 25px rgba(0, 255, 65, 0.45);
+}
+
+[data-theme="light"] .hero-title .highlight-matrix,
+[data-theme="light"] .highlight-matrix {
+  color: var(--color-secondary);
+  text-shadow: none;
+}
+
 .hero-subtitle {
   font-size: clamp(var(--text-base), 2vw, var(--text-lg));
   color: var(--color-text-muted);
@@ -245,7 +257,7 @@
   height: 320px;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   padding: 6px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   animation: morphBlob 10s ease-in-out infinite;
   box-shadow: var(--shadow-glow);
 }
@@ -609,7 +621,7 @@
 }
 
 .spacing-bar-fill {
-  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
   height: 18px;
   border-radius: var(--radius-xs);
 }

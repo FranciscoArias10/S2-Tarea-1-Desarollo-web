@@ -255,8 +255,7 @@ Las decisiones visuales se encuentran centralizadas en variables nativas en `:ro
 :root {
   /* Paleta Primaria & Acentos */
   --color-primary: #ff1e42;
-  --color-secondary: #8b5cf6;
-  --color-accent: #06b6d4;
+  --color-secondary: #00ff41;
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-danger: #ef4444;

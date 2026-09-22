@@ -6,13 +6,15 @@
   --color-primary-subtle: rgba(255, 30, 66, 0.15);
   --color-primary-glow: rgba(255, 30, 66, 0.4);
 
-  --color-secondary: #8b5cf6;
-  --color-secondary-hover: #7c3aed;
-  --color-secondary-subtle: rgba(139, 92, 246, 0.15);
+  --color-secondary: #00ff41;
+  --color-secondary-hover: #00dd38;
+  --color-secondary-subtle: rgba(0, 255, 65, 0.15);
+  --color-secondary-glow: rgba(0, 255, 65, 0.4);
 
-  --color-accent: #06b6d4;
-  --color-accent-hover: #0891b2;
-  --color-accent-subtle: rgba(6, 182, 212, 0.15);
+  --color-accent: #00ff41;
+  --color-accent-hover: #00dd38;
+  --color-accent-subtle: rgba(0, 255, 65, 0.15);
+  --color-accent-glow: rgba(0, 255, 65, 0.4);
 
   --color-success: #10b981;
   --color-success-subtle: rgba(16, 185, 129, 0.15);
@@ -119,13 +121,13 @@
   --color-primary-subtle: rgba(225, 29, 72, 0.12);
   --color-primary-glow: rgba(225, 29, 72, 0.25);
 
-  --color-secondary: #7c3aed;
-  --color-secondary-hover: #6d28d9;
-  --color-secondary-subtle: rgba(124, 58, 237, 0.1);
+  --color-secondary: #059638;
+  --color-secondary-hover: #04782c;
+  --color-secondary-subtle: rgba(5, 150, 56, 0.12);
 
-  --color-accent: #0284c7;
-  --color-accent-hover: #0369a1;
-  --color-accent-subtle: rgba(2, 132, 199, 0.1);
+  --color-accent: #059638;
+  --color-accent-hover: #04782c;
+  --color-accent-subtle: rgba(5, 150, 56, 0.12);
 
   --color-success: #059669;
   --color-success-subtle: rgba(5, 150, 105, 0.12);

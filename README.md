@@ -10,7 +10,7 @@
 
 ## 📖 1. Descripción
 
-Portafolio web personal e interactivo de **Francisco Arias**, estudiante de la carrera de **Ingeniería en Software** en la **Universidad Estatal de Milagro (UNEMI)**.
+Portafolio web personal.
 
 El proyecto fue diseñado y programado desde cero con el propósito de comunicar de manera clara, accesible y profesional la identidad técnica del desarrollador, sus competencias prácticas y sus proyectos de software más destacados.
 

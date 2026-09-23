@@ -441,6 +441,7 @@
   gap: var(--space-md);
 }
 
+.skill-filters,
 .project-filters {
   display: flex;
   justify-content: center;
@@ -480,10 +481,12 @@
   gap: var(--space-xl);
 }
 
+.skill-item,
 .project-item {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+.skill-item.hidden,
 .project-item.hidden {
   display: none;
 }
@@ -621,7 +624,8 @@
 }
 
 .spacing-bar-fill {
-  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  background: var(--color-primary);
+  box-shadow: 0 0 8px var(--color-primary-glow);
   height: 18px;
   border-radius: var(--radius-xs);
 }

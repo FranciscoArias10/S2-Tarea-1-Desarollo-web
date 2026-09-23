@@ -283,326 +283,287 @@
             académicos y personales.</p>
         </div>
 
-        <div class="skills-container">
+        <div class="skill-filters" role="tablist" aria-label="Filtro de habilidades por categoría">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todas (11)</button>
+          <button type="button" class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button type="button" class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Backend & Bases de Datos</button>
+          <button type="button" class="filter-btn" data-filter="tools" role="tab" aria-selected="false">Herramientas & Entorno</button>
+        </div>
 
-          <div class="skills-category">
-            <h3 class="skills-category-title">
-              <svg class="skills-category-icon" viewBox="0 0 24 24" width="22" height="22" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                aria-hidden="true">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
-              Desarrollo Frontend
-            </h3>
-
-            <div class="skills-grid">
-              <article class="skill-card">
-                <div class="skill-header">
-                  <div class="skill-info">
-                    <div class="skill-icon-wrapper" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M4 3h16l-1.5 15.5L12 21l-6.5-2.5L4 3z"></path>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 class="skill-name">HTML5 Semántico</h4>
-                      <span class="skill-level-text">Avanzado • 90%</span>
-                    </div>
+        <div class="skills-grid" id="skills-grid">
+          <div class="skill-item" data-category="frontend">
+            <article class="skill-card">
+              <div class="skill-header">
+                <div class="skill-info">
+                  <div class="skill-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 3h16l-1.5 15.5L12 21l-6.5-2.5L4 3z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="skill-name">HTML5 Semántico</h4>
+                    <span class="skill-level-text">Avanzado • 90%</span>
                   </div>
                 </div>
-                <p class="skill-desc">Estructuración accesible, jerarquía de encabezados, microformatos y buenas
-                  prácticas SEO.</p>
-                <div class="skill-progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                  aria-valuemax="100" aria-label="Dominio de HTML5 Semántico: 90%">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-              </article>
-
-              <article class="skill-card">
-                <div class="skill-header">
-                  <div class="skill-info">
-                    <div class="skill-icon-wrapper" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 class="skill-name">CSS3 & Variables</h4>
-                      <span class="skill-level-text">Avanzado • 85%</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="skill-desc">Flexbox, CSS Grid, Custom Properties, diseño responsivo sin frameworks y
-                  micro-animaciones fluidas.</p>
-                <div class="skill-progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                  aria-valuemax="100" aria-label="Dominio de CSS3: 85%">
-                  <div class="skill-progress-fill" style="width: 85%;"></div>
-                </div>
-              </article>
-
-              <article class="skill-card">
-                <div class="skill-header">
-                  <div class="skill-info">
-                    <div class="skill-icon-wrapper" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                        <line x1="9" y1="9" x2="9" y2="15"></line>
-                        <line x1="15" y1="9" x2="15" y2="15"></line>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 class="skill-name">JavaScript (ES6+)</h4>
-                      <span class="skill-level-text">Intermedio-Alto • 80%</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="skill-desc">Manipulación del DOM, módulos ES6, Fetch API, promesas, async/await y manejo de
-                  eventos.</p>
-                <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                  aria-valuemax="100" aria-label="Dominio de JavaScript: 80%">
-                  <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-              </article>
-
-              <article class="skill-card">
-                <div class="skill-header">
-                  <div class="skill-info">
-                    <div class="skill-icon-wrapper" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <ellipse cx="12" cy="12" rx="10" ry="4"></ellipse>
-                        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"></ellipse>
-                        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"></ellipse>
-                        <circle cx="12" cy="12" r="2"></circle>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 class="skill-name">React Basics</h4>
-                      <span class="skill-level-text">Intermedio • 70%</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="skill-desc">Componentes funcionales, hooks fundamentales (useState, useEffect), props y
-                  gestión de estado local.</p>
-                <div class="skill-progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                  aria-valuemax="100" aria-label="Dominio de React: 70%">
-                  <div class="skill-progress-fill" style="width: 70%;"></div>
-                </div>
-              </article>
-            </div>
+                <span class="badge badge-sm badge-outline">Frontend</span>
+              </div>
+              <p class="skill-desc">Estructuración accesible, jerarquía de encabezados, microformatos y buenas prácticas SEO.</p>
+              <div class="skill-progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Dominio de HTML5 Semántico: 90%">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </article>
           </div>
 
-          <div class="skills-category">
-            <h3 class="skills-category-title">
-              <svg class="skills-category-icon" viewBox="0 0 24 24" width="22" height="22" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                aria-hidden="true">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              Backend & Bases de Datos
-            </h3>
-
-            <div class="skills-grid">
-              <article class="skill-card">
-                <div class="skill-header">
-                  <div class="skill-info">
-                    <div class="skill-icon-wrapper" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
-                        <line x1="12" y1="22" x2="12" y2="12"></line>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 class="skill-name">Node.js & Express</h4>
-                      <span class="skill-level-text">Intermedio • 75%</span>
-                    </div>
+          <div class="skill-item" data-category="frontend">
+            <article class="skill-card">
+              <div class="skill-header">
+                <div class="skill-info">
+                  <div class="skill-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="skill-name">CSS3 & Variables</h4>
+                    <span class="skill-level-text">Avanzado • 85%</span>
                   </div>
                 </div>
-                <p class="skill-desc">Creación de servidores HTTP, middlewares, arquitectura MVC y desarrollo de
-                  endpoints RESTful.</p>
-                <div class="skill-progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                  aria-valuemax="100" aria-label="Dominio de Node.js: 75%">
-                  <div class="skill-progress-fill" style="width: 75%;"></div>
-                </div>
-              </article>
-
-              <article class="skill-card">
-                <div class="skill-header">
-                  <div class="skill-info">
-                    <div class="skill-icon-wrapper" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 class="skill-name">PostgreSQL & MySQL</h4>
-                      <span class="skill-level-text">Intermedio • 75%</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="skill-desc">Modelado entidad-relación, normalización, consultas complejas con JOINs y
-                  transacciones seguras.</p>
-                <div class="skill-progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                  aria-valuemax="100" aria-label="Dominio de SQL: 75%">
-                  <div class="skill-progress-fill" style="width: 75%;"></div>
-                </div>
-              </article>
-
-              <article class="skill-card">
-                <div class="skill-header">
-                  <div class="skill-info">
-                    <div class="skill-icon-wrapper" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="18" cy="5" r="3"></circle>
-                        <circle cx="6" cy="12" r="3"></circle>
-                        <circle cx="18" cy="19" r="3"></circle>
-                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 class="skill-name">APIs REST & JSON</h4>
-                      <span class="skill-level-text">Avanzado • 80%</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="skill-desc">Diseño de endpoints consistentes, códigos de estado HTTP, autenticación JWT y
-                  consumo eficiente.</p>
-                <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                  aria-valuemax="100" aria-label="Dominio de APIs REST: 80%">
-                  <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-              </article>
-            </div>
+                <span class="badge badge-sm badge-outline">Frontend</span>
+              </div>
+              <p class="skill-desc">Flexbox, CSS Grid, Custom Properties, diseño responsivo sin frameworks y micro-animaciones fluidas.</p>
+              <div class="skill-progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Dominio de CSS3: 85%">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </article>
           </div>
 
-          <div class="skills-category">
-            <h3 class="skills-category-title">
-              <svg class="skills-category-icon" viewBox="0 0 24 24" width="22" height="22" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                aria-hidden="true">
-                <path
-                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
-                </path>
-              </svg>
-              Herramientas & Entorno de Trabajo
-            </h3>
-
-            <div class="skills-grid">
-              <article class="skill-card">
-                <div class="skill-header">
-                  <div class="skill-info">
-                    <div class="skill-icon-wrapper" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <line x1="6" y1="3" x2="6" y2="15"></line>
-                        <circle cx="18" cy="6" r="3"></circle>
-                        <circle cx="6" cy="18" r="3"></circle>
-                        <path d="M18 9a9 9 0 0 1-9 9"></path>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 class="skill-name">Git & GitHub</h4>
-                      <span class="skill-level-text">Avanzado • 85%</span>
-                    </div>
+          <div class="skill-item" data-category="frontend">
+            <article class="skill-card">
+              <div class="skill-header">
+                <div class="skill-info">
+                  <div class="skill-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="9" y1="9" x2="9" y2="15"></line>
+                      <line x1="15" y1="9" x2="15" y2="15"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="skill-name">JavaScript (ES6+)</h4>
+                    <span class="skill-level-text">Intermedio-Alto • 80%</span>
                   </div>
                 </div>
-                <p class="skill-desc">Control de versiones semántico, ramas de trabajo, Pull Requests, merge y
-                  publicación en GitHub Pages.</p>
-                <div class="skill-progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                  aria-valuemax="100" aria-label="Dominio de Git: 85%">
-                  <div class="skill-progress-fill" style="width: 85%;"></div>
-                </div>
-              </article>
-
-              <article class="skill-card">
-                <div class="skill-header">
-                  <div class="skill-info">
-                    <div class="skill-icon-wrapper" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <polyline points="4 17 10 11 4 5"></polyline>
-                        <line x1="12" y1="19" x2="20" y2="19"></line>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 class="skill-name">Linux & Bash</h4>
-                      <span class="skill-level-text">Intermedio • 75%</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="skill-desc">Gestión de permisos, scripting básico, automatización de tareas y configuración de
-                  servidores de desarrollo.</p>
-                <div class="skill-progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                  aria-valuemax="100" aria-label="Dominio de Linux: 75%">
-                  <div class="skill-progress-fill" style="width: 75%;"></div>
-                </div>
-              </article>
-
-              <article class="skill-card">
-                <div class="skill-header">
-                  <div class="skill-info">
-                    <div class="skill-icon-wrapper" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
-                        <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
-                        <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
-                        <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
-                        <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 class="skill-name">Figma & UI Prototyping</h4>
-                      <span class="skill-level-text">Intermedio • 70%</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="skill-desc">Wireframing, creación de sistemas de diseño, maquetación de interfaces y
-                  especificación de tokens.</p>
-                <div class="skill-progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                  aria-valuemax="100" aria-label="Dominio de Figma: 70%">
-                  <div class="skill-progress-fill" style="width: 70%;"></div>
-                </div>
-              </article>
-
-              <article class="skill-card">
-                <div class="skill-header">
-                  <div class="skill-info">
-                    <div class="skill-icon-wrapper" aria-hidden="true" style="color: var(--color-primary); background: var(--color-primary-subtle);">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                        <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 class="skill-name">Expo Go & Mobile Apps</h4>
-                      <span class="skill-level-text">Intermedio-Alto • 80%</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="skill-desc">Creación, desarrollo y testeo ágil en tiempo real de aplicaciones móviles nativas para Android e iOS mediante Expo Go y React Native.</p>
-                <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                  aria-valuemax="100" aria-label="Dominio de Expo Go: 80%">
-                  <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-              </article>
-            </div>
+                <span class="badge badge-sm badge-outline">Frontend</span>
+              </div>
+              <p class="skill-desc">Manipulación del DOM, módulos ES6, Fetch API, promesas, async/await y manejo de eventos.</p>
+              <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Dominio de JavaScript: 80%">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </article>
           </div>
 
+          <div class="skill-item" data-category="frontend">
+            <article class="skill-card">
+              <div class="skill-header">
+                <div class="skill-info">
+                  <div class="skill-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <ellipse cx="12" cy="12" rx="10" ry="4"></ellipse>
+                      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"></ellipse>
+                      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"></ellipse>
+                      <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="skill-name">React Basics</h4>
+                    <span class="skill-level-text">Intermedio • 70%</span>
+                  </div>
+                </div>
+                <span class="badge badge-sm badge-outline">Frontend</span>
+              </div>
+              <p class="skill-desc">Componentes funcionales, hooks fundamentales (useState, useEffect), props y gestión de estado local.</p>
+              <div class="skill-progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Dominio de React: 70%">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="skill-item" data-category="backend">
+            <article class="skill-card">
+              <div class="skill-header">
+                <div class="skill-info">
+                  <div class="skill-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                      <line x1="12" y1="22" x2="12" y2="12"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="skill-name">Node.js & Express</h4>
+                    <span class="skill-level-text">Intermedio • 75%</span>
+                  </div>
+                </div>
+                <span class="badge badge-sm badge-outline">Backend</span>
+              </div>
+              <p class="skill-desc">Creación de servidores HTTP, middlewares, arquitectura MVC y desarrollo de endpoints RESTful.</p>
+              <div class="skill-progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Dominio de Node.js: 75%">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="skill-item" data-category="backend">
+            <article class="skill-card">
+              <div class="skill-header">
+                <div class="skill-info">
+                  <div class="skill-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                      <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="skill-name">PostgreSQL & MySQL</h4>
+                    <span class="skill-level-text">Intermedio • 75%</span>
+                  </div>
+                </div>
+                <span class="badge badge-sm badge-outline">Backend</span>
+              </div>
+              <p class="skill-desc">Modelado entidad-relación, normalización, consultas complejas con JOINs y transacciones seguras.</p>
+              <div class="skill-progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Dominio de SQL: 75%">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="skill-item" data-category="backend">
+            <article class="skill-card">
+              <div class="skill-header">
+                <div class="skill-info">
+                  <div class="skill-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="18" cy="5" r="3"></circle>
+                      <circle cx="6" cy="12" r="3"></circle>
+                      <circle cx="18" cy="19" r="3"></circle>
+                      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="skill-name">APIs REST & JSON</h4>
+                    <span class="skill-level-text">Avanzado • 80%</span>
+                  </div>
+                </div>
+                <span class="badge badge-sm badge-outline">Backend</span>
+              </div>
+              <p class="skill-desc">Diseño de endpoints consistentes, códigos de estado HTTP, autenticación JWT y consumo eficiente.</p>
+              <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Dominio de APIs REST: 80%">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="skill-item" data-category="tools">
+            <article class="skill-card">
+              <div class="skill-header">
+                <div class="skill-info">
+                  <div class="skill-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="6" y1="3" x2="6" y2="15"></line>
+                      <circle cx="18" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M18 9a9 9 0 0 1-9 9"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="skill-name">Git & GitHub</h4>
+                    <span class="skill-level-text">Avanzado • 85%</span>
+                  </div>
+                </div>
+                <span class="badge badge-sm badge-outline">Herramientas</span>
+              </div>
+              <p class="skill-desc">Control de versiones semántico, ramas de trabajo, Pull Requests, merge y publicación en GitHub Pages.</p>
+              <div class="skill-progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Dominio de Git: 85%">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="skill-item" data-category="tools">
+            <article class="skill-card">
+              <div class="skill-header">
+                <div class="skill-info">
+                  <div class="skill-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="4 17 10 11 4 5"></polyline>
+                      <line x1="12" y1="19" x2="20" y2="19"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="skill-name">Linux & Bash</h4>
+                    <span class="skill-level-text">Intermedio • 75%</span>
+                  </div>
+                </div>
+                <span class="badge badge-sm badge-outline">Herramientas</span>
+              </div>
+              <p class="skill-desc">Gestión de permisos, scripting básico, automatización de tareas y configuración de servidores de desarrollo.</p>
+              <div class="skill-progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Dominio de Linux: 75%">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="skill-item" data-category="tools">
+            <article class="skill-card">
+              <div class="skill-header">
+                <div class="skill-info">
+                  <div class="skill-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                      <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                      <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                      <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                      <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="skill-name">Figma & UI Prototyping</h4>
+                    <span class="skill-level-text">Intermedio • 70%</span>
+                  </div>
+                </div>
+                <span class="badge badge-sm badge-outline">Herramientas</span>
+              </div>
+              <p class="skill-desc">Wireframing, creación de sistemas de diseño, maquetación de interfaces y especificación de tokens.</p>
+              <div class="skill-progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Dominio de Figma: 70%">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="skill-item" data-category="tools">
+            <article class="skill-card">
+              <div class="skill-header">
+                <div class="skill-info">
+                  <div class="skill-icon-wrapper" aria-hidden="true" style="color: var(--color-primary); background: var(--color-primary-subtle);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                      <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="skill-name">Expo Go & Mobile Apps</h4>
+                    <span class="skill-level-text">Intermedio-Alto • 80%</span>
+                  </div>
+                </div>
+                <span class="badge badge-sm badge-outline">Herramientas</span>
+              </div>
+              <p class="skill-desc">Creación, desarrollo y testeo ágil en tiempo real de aplicaciones móviles nativas para Android e iOS mediante Expo Go y React Native.</p>
+              <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Dominio de Expo Go: 80%">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>

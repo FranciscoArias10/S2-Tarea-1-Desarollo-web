@@ -120,7 +120,7 @@ export const projectsData = [
 ];
 
 export function initProjects() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll('.project-filters .filter-btn');
   const projectItems = document.querySelectorAll('.project-item');
   const modal = document.getElementById('project-modal');
   const modalBackdrop = document.getElementById('modal-backdrop');

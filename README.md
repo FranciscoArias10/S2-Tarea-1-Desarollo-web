@@ -7,8 +7,6 @@
 ![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub_Pages-222222?style=for-the-badge&logo=github)
 ![Commits](https://img.shields.io/badge/Git-Conventional_Commits-6366F1?style=for-the-badge&logo=git&logoColor=white)
 
-Portafolio web personal e interactivo de **Francisco Steven Arias Pérez**, estudiante de la carrera de **Ingeniería en Software** en la **Universidad Estatal de Milagro (UNEMI)**. Desarrollado desde cero aplicando estrictos estándares de **HTML5 semántico**, arquitectura CSS modular basada en **Custom Properties (Design Tokens)** e interactividad avanzada mediante **Vanilla JavaScript (ES6+)**, sin frameworks externos ni librerías pesadas.
-
 ---
 
 ## 📌 Tabla de Contenidos

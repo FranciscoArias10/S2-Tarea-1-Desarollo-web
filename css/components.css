@@ -296,6 +296,7 @@
   padding: var(--space-md);
   display: flex;
   flex-direction: column;
+  height: 100%;
   gap: var(--space-xs);
   transition: all var(--transition-normal);
 }
@@ -310,12 +311,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--space-xs);
+  min-height: 48px;
 }
 
 .skill-info {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+  min-width: 0;
+  flex: 1;
 }
 
 .skill-icon-wrapper {
@@ -327,25 +332,35 @@
   border-radius: var(--radius-md);
   background: var(--color-surface-elevated);
   border: 1px solid var(--color-border);
-  color: var(--color-primary);
+  color: var(--color-text);
   flex-shrink: 0;
+  transition: all var(--transition-fast);
 }
 
 .skill-icon-wrapper svg {
   width: 1.5rem;
   height: 1.5rem;
+  display: block;
+}
+
+.skill-card:hover .skill-icon-wrapper {
+  border-color: var(--color-primary);
+  transform: scale(1.05);
 }
 
 .skill-name {
   font-size: var(--text-sm);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text);
+  line-height: 1.25;
 }
 
 .skill-level-text {
   font-size: var(--text-xs);
   font-weight: var(--font-weight-medium);
   color: var(--color-text-dim);
+  white-space: nowrap;
+  display: block;
 }
 
 .skill-desc {
@@ -353,6 +368,8 @@
   color: var(--color-text-muted);
   line-height: 1.4;
   margin-top: var(--space-3xs);
+  min-height: 3.9em;
+  flex-grow: 1;
 }
 
 .skill-progress-bar {
@@ -361,7 +378,7 @@
   background: var(--color-surface-elevated);
   border-radius: var(--radius-full);
   overflow: hidden;
-  margin-top: var(--space-xs);
+  margin-top: auto;
 }
 
 .skill-progress-fill {

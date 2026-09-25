@@ -151,4 +151,4 @@ A continuación se presentan las capturas reales de los proyectos desarrollados 
 * **Estudiante**: Francisco Arias
 * **Carrera**: Ingeniería en Software — UNEMI (Universidad Estatal de Milagro)
 * **GitHub**: [@FranciscoArias10](https://github.com/FranciscoArias10)
-* **LinkedIn**: [Francisco Steven Arias Pérez](https://www.linkedin.com/in/francisco-steven-arias-p%C3%A9rez-5b8663219/)
+* **LinkedIn**: [Francisco Steven Arias Pérez](https://www.linkedin.com/in/francisco-steven-arias-perez-5b8663219/)
